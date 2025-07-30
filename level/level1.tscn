@@ -9,17 +9,17 @@
 [node name="Background" parent="." instance=ExtResource("1_cc4m7")]
 
 [node name="Platform" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(-4, 91)
+position = Vector2(-8, 126)
 
 [node name="Platform2" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(134, 80)
+position = Vector2(141, 121)
 
 [node name="Player" parent="." instance=ExtResource("3_gd1gh")]
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Platform3" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(288, 83)
+position = Vector2(301, 109)
 
 [node name="Platform4" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(406, 54)
+position = Vector2(444, 89)
