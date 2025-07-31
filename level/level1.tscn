@@ -1,25 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://dlxg80b58vwtr"]
+[gd_scene load_steps=6 format=3 uid="uid://dlxg80b58vwtr"]
 
+[ext_resource type="Script" uid="uid://on6js2aem4lt" path="res://level/level_1.gd" id="1_afkyo"]
 [ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="1_cc4m7"]
-[ext_resource type="PackedScene" uid="uid://c10ucj5wvv6hj" path="res://platform/platform.tscn" id="2_du84n"]
 [ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_gd1gh"]
+[ext_resource type="PackedScene" uid="uid://bmbt1fhnrat60" path="res://platform/platform3602.tscn" id="4_afkyo"]
+[ext_resource type="PackedScene" uid="uid://cfsbuahyu7e2f" path="res://platform/platform360.tscn" id="4_gd1gh"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_afkyo")
 
 [node name="Background" parent="." instance=ExtResource("1_cc4m7")]
 
-[node name="Platform" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(-8, 126)
-
-[node name="Platform2" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(141, 121)
-
 [node name="Player" parent="." instance=ExtResource("3_gd1gh")]
+position = Vector2(-32, -28)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="Platform3" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(301, 109)
+[node name="Platform" parent="." instance=ExtResource("4_gd1gh")]
+position = Vector2(70, -386)
+rotation = 67.1963
 
-[node name="Platform4" parent="." instance=ExtResource("2_du84n")]
-position = Vector2(444, 89)
+[node name="Platform2" parent="." instance=ExtResource("4_afkyo")]
+position = Vector2(1, -346)

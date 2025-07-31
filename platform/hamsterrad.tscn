@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://jh3vmtlugjv2"]
+
+[ext_resource type="PackedScene" uid="uid://c10ucj5wvv6hj" path="res://platform/platform.tscn" id="1_g6f16"]
+
+[node name="hamsterrad" type="Node2D"]
+position = Vector2(1, -1)
+
+[node name="Platform" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-0.999847, 371)
+
+[node name="Platform2" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-128, 349)
+rotation = 0.349066
+
+[node name="Platform3" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-239, 285)
+rotation = 0.698132
+
+[node name="Platform4" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-321, 186)
+rotation = 1.0472
+
+[node name="Platform5" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-365, 65)
+rotation = 1.39626
+
+[node name="Platform6" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-365, -65.0001)
+rotation = 1.74533
+
+[node name="Platform7" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-320, -186)
+rotation = 2.0944
+
+[node name="Platform8" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-237, -284)
+rotation = 2.44346
+
+[node name="Platform9" parent="." instance=ExtResource("1_g6f16")]
+position = Vector2(-125, -348)
+rotation = 2.79253
