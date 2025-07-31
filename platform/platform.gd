@@ -1,4 +1,3 @@
-@tool
 class_name Platform extends AnimatableBody2D
 
 enum PlatformColor {
@@ -41,7 +40,7 @@ func set_width(value: float) -> void:
 	if shape == null:
 		return
 	shape.size.x = width
-	sprite.position.x = -width / 2.0
+	sprite.position.x = - width / 2.0
 	sprite.size.x = width
 
 
@@ -50,7 +49,7 @@ func set_height(value: float) -> void:
 	if shape == null:
 		return
 	shape.size.y = height
-	sprite.position.y = -height / 2.0
+	sprite.position.y = - height / 2.0
 	sprite.size.y = height
 
 

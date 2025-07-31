@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dlxg80b58vwtr"]
 
-[ext_resource type="Script" uid="uid://on6js2aem4lt" path="res://level/level_1.gd" id="1_afkyo"]
+[ext_resource type="Script" path="res://level/level_1.gd" id="1_afkyo"]
 [ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="1_cc4m7"]
 [ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_gd1gh"]
-[ext_resource type="PackedScene" uid="uid://bmbt1fhnrat60" path="res://platform/platform3602.tscn" id="4_afkyo"]
 [ext_resource type="PackedScene" uid="uid://cfsbuahyu7e2f" path="res://platform/platform360.tscn" id="4_gd1gh"]
+[ext_resource type="PackedScene" uid="uid://xlya6p4x0rys" path="res://pickup/pickup.tscn" id="5_afkyo"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_afkyo")
@@ -18,7 +18,7 @@ position = Vector2(-32, -28)
 
 [node name="Platform" parent="." instance=ExtResource("4_gd1gh")]
 position = Vector2(70, -386)
-rotation = 67.1963
+rotation = 0.0
 
-[node name="Platform2" parent="." instance=ExtResource("4_afkyo")]
-position = Vector2(1, -346)
+[node name="Pickup" parent="." instance=ExtResource("5_afkyo")]
+position = Vector2(-78, -9)
