@@ -9,8 +9,11 @@ func _ready() -> void:
     super ()
     if Engine.is_editor_hint():
         return
-    start_position = position
-    position = map_centrum
+    start_position = global_position
+    print(global_position)
+    # Use set_deferred to ensure the change happens after the physics engine initialization
+    set_deferred("global_position", map_centrum)
+    print(global_position)
     var difference_position = start_position - map_centrum
     collision_shape_2d.global_position += difference_position
     sprite.global_position += difference_position

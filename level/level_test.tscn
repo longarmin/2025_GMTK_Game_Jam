@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bym8rvs5s4rr5"]
+
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="1_qr3a6"]
+[ext_resource type="Texture2D" uid="uid://cj0vto6ljiewx" path="res://platform/ground_platform.png" id="2_bvlf0"]
+
+[node name="LevelTest" type="Node2D"]
+
+[node name="InsidePlatformMoveable4" parent="." instance=ExtResource("1_qr3a6")]
+position = Vector2(199, 122)
+map_centrum = Vector2(200, 100)
+
+[node name="GroundPlatform" type="Sprite2D" parent="."]
+position = Vector2(200, 100)
+texture = ExtResource("2_bvlf0")

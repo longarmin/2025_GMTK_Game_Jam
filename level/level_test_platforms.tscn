@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv3he12unhbs0"]
+
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle_custom.tscn" id="1_1enlp"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="2_1enlp"]
+[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_1enlp"]
+
+[node name="LevelTestPlatforms" type="Node2D"]
+
+[node name="CircleCustom" parent="." instance=ExtResource("1_1enlp")]
+platform_count = 8
+
+[node name="InsidePlatformMoveable" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(52, 173)
+rotation = -0.240652
+width = 32.0
+
+[node name="InsidePlatformMoveable2" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-116, -42)
+rotation = -1.27354
+
+[node name="InsidePlatformMoveable3" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-6, -122)
+rotation = 0.00922897
+width = 96.0
+
+[node name="InsidePlatformMoveable4" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-111, 120)
+rotation = -2.33443
+width = 112.0
+
+[node name="Player" parent="." instance=ExtResource("3_1enlp")]
+position = Vector2(-31, 179)
+rotation = 0.00571004
+platform_on_leave = 2
+max_speed = 150
+max_fall_speed = 300
+jump_height = 60.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.3
+jump_horizontal_distance = 60
+
+[node name="InsidePlatformMoveable5" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(105, -70)
+rotation = 0.899784
+width = 96.0
+
+[node name="InsidePlatformMoveable6" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(80, 8)
+rotation = -1.03607
+width = 64.0
+
+[node name="InsidePlatformMoveable7" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-14, 43)
+rotation = 0.61889
+width = 32.0
+
+[node name="InsidePlatformMoveable8" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-49, 91)
+rotation = 0.53989
+width = 48.0
+
+[node name="InsidePlatformMoveable10" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(53, 72)
+rotation = -0.340252
+width = 96.0
+
+[node name="InsidePlatformMoveable9" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(5, 143)
+width = 48.0
+
+[node name="InsidePlatformMoveable11" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-75, 34)
+rotation = -1.78815
+width = 32.0
+
+[node name="InsidePlatformMoveable12" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-165, 38)
+rotation = 1.78751
+width = 48.0
+
+[node name="InsidePlatformMoveable13" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(151, 58)
+rotation = -1.21796
+width = 64.0
+
+[node name="InsidePlatformMoveable14" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(128, 13)
+rotation = 1.90694
+width = 32.0
+
+[node name="InsidePlatformMoveable15" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(70, -155)
+rotation = 0.25438
+width = 32.0
+
+[node name="InsidePlatformMoveable16" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(-62, -152)
+rotation = -0.158916
+width = 48.0
+
+[node name="InsidePlatformMoveable17" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(162, -78)
+rotation = 1.38759
+width = 48.0
+
+[node name="InsidePlatformMoveable18" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(170, -13)
+rotation = 1.57139
+width = 48.0
+
+[node name="InsidePlatformMoveable19" parent="." instance=ExtResource("2_1enlp")]
+position = Vector2(27, -64)
+rotation = 0.46732
+width = 32.0
