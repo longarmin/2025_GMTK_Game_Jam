@@ -26,8 +26,7 @@ const PLATFORM_TEXTURES = {
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
 @onready var shape: RectangleShape2D = collision_shape_2d.shape
 @onready var sprite: NinePatchRect = %Sprite
-@onready var rot_spd := -0.1
-
+@onready var rot_spd := -0.5
 
 func _ready() -> void:
 	set_width(width)
@@ -43,7 +42,7 @@ func _ready() -> void:
 		#elif child is NinePatchRect:
 			#child.rotation_degrees = j * 20
 			#j += 1
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
 	rotation += delta * rot_spd
