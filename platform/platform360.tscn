@@ -18,7 +18,7 @@ script = ExtResource("1_qjiyh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(7, 430)
+position = Vector2(1.32398, 433.864)
 shape = SubResource("RectangleShape2D_k4ow2")
 one_way_collision_margin = 0.0
 
@@ -45,7 +45,6 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(-125.028, 408.5)
-rotation = 0.349066
 shape = SubResource("RectangleShape2D_qjiyh")
 
 [node name="Sprite2" type="NinePatchRect" parent="."]

@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://b555i5jx3xg5j"]
+
+[ext_resource type="PackedScene" uid="uid://c10ucj5wvv6hj" path="res://platform/platform.tscn" id="2_oqr7i"]
+
+[sub_resource type="GDScript" id="GDScript_gnvwq"]
+script/source = "@tool
+
+extends Node2D
+
+@export var rot_speed : float = 0.1
+
+func _ready() -> void:
+	rotation = 0.0
+	var i = 0
+	for child in get_children():
+		if child is Platform:
+			child.rotation_degrees = i * 20
+			i += 1
+
+func _process(delta: float) -> void:
+	rotation +=delta * rot_speed
+"
+
+[node name="PlatformFinal" type="Node2D"]
+script = SubResource("GDScript_gnvwq")
+rot_speed = 0.0
+
+[node name="Platform" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -7.19677
+width = 144.0
+
+[node name="Platform2" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -6.84768
+width = 144.0
+
+[node name="Platform3" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -6.4986
+width = 144.0
+
+[node name="Platform4" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -6.14951
+width = 144.0
+
+[node name="Platform5" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -5.80044
+width = 144.0
+
+[node name="Platform6" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -5.45138
+width = 144.0
+
+[node name="Platform7" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -5.1023
+width = 144.0
+
+[node name="Platform8" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -4.75326
+width = 144.0
+
+[node name="Platform9" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -4.40421
+width = 144.0
+
+[node name="Platform10" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -4.05519
+width = 144.0
+
+[node name="Platform11" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -3.70613
+width = 144.0
+
+[node name="Platform12" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -3.35708
+width = 144.0
+
+[node name="Platform13" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -3.00803
+width = 144.0
+
+[node name="Platform14" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -2.65896
+width = 144.0
+
+[node name="Platform15" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -2.30988
+width = 144.0
+
+[node name="Platform16" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -1.96081
+width = 144.0
+
+[node name="Platform17" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -1.61172
+width = 144.0
+
+[node name="Platform18" parent="." instance=ExtResource("2_oqr7i")]
+rotation = -1.26262
+width = 144.0

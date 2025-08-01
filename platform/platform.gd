@@ -1,3 +1,4 @@
+@tool
 class_name Platform extends AnimatableBody2D
 
 enum PlatformColor {
@@ -11,7 +12,7 @@ const PLATFORM_TEXTURES = {
 }
 
 ## The width of the platform in pixels. Snaps to 16 pixel increments.
-@export_range(32.0, 512.0, 16.0) var width := 128.0: set = set_width
+@export_range(32.0, 512.0, 16.0) var width := 160.0: set = set_width
 ## The height of the platform in pixels. Snaps to 16 pixel increments.
 @export_range(8.0, 512.0, 8.0) var height := 16.0: set = set_height
 ## If true, the platform will only collide with the player from the top and let
@@ -31,7 +32,16 @@ func _ready() -> void:
 	set_height(height)
 	set_one_way_collision(one_way_collision)
 	set_color(color)
-
+	rotation = 0.0
+	#var i = 0
+	#var j = 0
+	#for child in get_children():
+		#if child is CollisionShape2D:
+			#child.rotation_degrees = i * 20
+			#i += 1
+		#elif child is NinePatchRect:
+			#child.rotation_degrees = j * 20
+			#j += 1
 func _process(delta: float) -> void:
 	rotation += delta * rot_spd
 	
@@ -49,7 +59,7 @@ func set_height(value: float) -> void:
 	if shape == null:
 		return
 	shape.size.y = height
-	sprite.position.y = - height / 2.0
+	sprite.position.y = - height / 2.0 + 400
 	sprite.size.y = height
 
 

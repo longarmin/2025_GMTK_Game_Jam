@@ -5,15 +5,17 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_802t3"]
 resource_local_to_scene = true
-size = Vector2(128, 16)
+size = Vector2(160, 16)
 
 [node name="Platform" type="AnimatableBody2D"]
+rotation = -32.2897
 collision_layer = 2
 collision_mask = 0
 script = ExtResource("1_0n7li")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, 400)
 shape = SubResource("RectangleShape2D_802t3")
 
 [node name="Sprite" type="NinePatchRect" parent="."]
@@ -23,10 +25,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -64.0
-offset_top = -8.0
-offset_right = 64.0
-offset_bottom = 8.0
+offset_left = -80.0
+offset_top = 392.0
+offset_right = 80.0
+offset_bottom = 408.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2q7nh")
