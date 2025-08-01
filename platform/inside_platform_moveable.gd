@@ -7,6 +7,8 @@ var start_position: Vector2
 
 func _ready() -> void:
     super ()
+    if Engine.is_editor_hint():
+        return
     start_position = position
     position = map_centrum
     var difference_position = start_position - map_centrum

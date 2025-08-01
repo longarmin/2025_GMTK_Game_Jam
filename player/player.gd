@@ -62,6 +62,7 @@ func _ready() -> void:
 	energy_timer.wait_time = 1.0
 	energy_timer.autostart = true
 	add_child(energy_timer)
+	set_energy(energy)
 	energy_timer.timeout.connect(func() -> void:
 		energy -= 1.0
 		print("Energy: " + str(energy))

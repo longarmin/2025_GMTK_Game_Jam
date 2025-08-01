@@ -134,3 +134,5 @@ offset_bottom = -11.0
 theme = ExtResource("16_32hag")
 value = 50.0
 show_percentage = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
