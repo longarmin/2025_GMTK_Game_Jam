@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://xlya6p4x0rys"]
+[gd_scene load_steps=4 format=3 uid="uid://xlya6p4x0rys"]
 
 [ext_resource type="Script" uid="uid://cr7ja7fupnnj1" path="res://pickup/pickup.gd" id="1_7srb4"]
+[ext_resource type="Texture2D" uid="uid://drpg6o6mx4moq" path="res://pickup/cheese.png" id="2_w677d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vtnsc"]
 
@@ -9,6 +10,7 @@ collision_layer = 2
 script = ExtResource("1_7srb4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_w677d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_vtnsc")

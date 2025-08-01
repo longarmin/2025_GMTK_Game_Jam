@@ -2,11 +2,13 @@
 class_name Platform extends AnimatableBody2D
 
 enum PlatformColor {
+	WHEEL_GROUND,
 	GROUND,
 	YELLOW
 }
 
 const PLATFORM_TEXTURES = {
+	PlatformColor.WHEEL_GROUND: preload("res://platform/wheel_ground_platform.png"),
 	PlatformColor.GROUND: preload("res://platform/ground_platform.png"),
 	PlatformColor.YELLOW: preload("res://platform/yellow_platform.png")
 }
@@ -19,12 +21,13 @@ const PLATFORM_TEXTURES = {
 ## the player jump up through it.
 @export var one_way_collision := false: set = set_one_way_collision
 ## This property lets you pick the color palette used by the platform.
-@export var color: PlatformColor = PlatformColor.GROUND: set = set_color
+@export var color: PlatformColor = PlatformColor.WHEEL_GROUND: set = set_color
 
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
 @onready var shape: RectangleShape2D = collision_shape_2d.shape
 @onready var sprite: NinePatchRect = %Sprite
-@onready var rot_spd := -0.5
+#@onready var rot_spd := -0.5
+
 
 func _ready() -> void:
 	set_width(width)
@@ -43,7 +46,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
-	rotation += delta * rot_spd
+	rotation += delta * GameManager.rot_spd
 	
 func set_width(value: float) -> void:
 	width = value

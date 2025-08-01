@@ -8,6 +8,7 @@ enum GameState {
 }
 
 var current_state: GameState
+var rot_spd: float = -0.5
 
 
 var scenes: Dictionary[GameState, PackedScene] = {

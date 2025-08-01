@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dlxg80b58vwtr"]
 
-[ext_resource type="Script" path="res://level/level_1.gd" id="1_afkyo"]
+[ext_resource type="Script" uid="uid://on6js2aem4lt" path="res://level/level_1.gd" id="1_afkyo"]
 [ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="1_cc4m7"]
 [ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_gd1gh"]
 [ext_resource type="PackedScene" uid="uid://6yaedci75bu" path="res://platform/lvl_1_platform.tscn" id="5_a1r6t"]
@@ -12,7 +12,7 @@ script = ExtResource("1_afkyo")
 [node name="Background" parent="." instance=ExtResource("1_cc4m7")]
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("3_gd1gh")]
-position = Vector2(183, 57)
+position = Vector2(268, 251)
 
 [node name="Pickup" parent="." instance=ExtResource("5_afkyo")]
 position = Vector2(-78, -9)

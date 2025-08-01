@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c10ucj5wvv6hj"]
 
 [ext_resource type="Script" uid="uid://d0h41hwes4o1u" path="res://platform/platform.gd" id="1_2q7nh"]
-[ext_resource type="Texture2D" uid="uid://cj0vto6ljiewx" path="res://platform/ground_platform.png" id="2_2q7nh"]
+[ext_resource type="Texture2D" uid="uid://bh82au820d15p" path="res://platform/wheel_ground_platform.png" id="2_2q7nh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_802t3"]
 resource_local_to_scene = true

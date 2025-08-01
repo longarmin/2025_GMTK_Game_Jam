@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://6yaedci75bu"]
+[gd_scene load_steps=5 format=3 uid="uid://6yaedci75bu"]
 
 [ext_resource type="PackedScene" uid="uid://ddme0xyevwull" path="res://platform/circle.tscn" id="1_rdhm0"]
 [ext_resource type="PackedScene" uid="uid://xjj3eoht8t4r" path="res://platform/inside_platform.tscn" id="2_rdhm0"]
 [ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="3_ighpp"]
+[ext_resource type="PackedScene" uid="uid://xlya6p4x0rys" path="res://pickup/pickup.tscn" id="4_lrkle"]
 
 [node name="Lvl1Platform" type="Node2D"]
 
@@ -14,48 +15,96 @@ y_komponente = 350.0
 start_rotation = -0.06
 
 [node name="InsidePlatform2" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 0.5
-y_komponente = 300.0
-start_rotation = 0.5
+rotation = 0.8
+y_komponente = 305.0
+start_rotation = 0.8
 width = 96.0
 
 [node name="InsidePlatform3" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 1.0
-y_komponente = 250.0
-start_rotation = 1.0
+rotation = 1.24
+y_komponente = 305.0
+start_rotation = 1.24
 width = 96.0
 
 [node name="InsidePlatform4" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 1.5
-y_komponente = 200.0
-start_rotation = 1.5
+rotation = 3.0
+y_komponente = 225.0
+start_rotation = 3.0
 width = 96.0
 
 [node name="InsidePlatform5" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 2.0
-y_komponente = 150.0
-start_rotation = 2.0
+rotation = 3.53
+y_komponente = 212.0
+start_rotation = 3.53
 width = 80.0
 
 [node name="InsidePlatform6" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 2.5
-y_komponente = 100.0
-start_rotation = 2.5
+rotation = 4.25
+y_komponente = 189.0
+start_rotation = 4.25
 width = 96.0
 
 [node name="InsidePlatform7" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 3.32
-y_komponente = 50.0
-start_rotation = 3.32
+rotation = 4.81
+y_komponente = 269.0
+start_rotation = 4.81
 width = 48.0
 
 [node name="InsidePlatform8" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 4.5
-y_komponente = 40.0
-start_rotation = 4.5
+rotation = 0.4
+y_komponente = 138.0
+start_rotation = 0.4
+width = 48.0
+
+[node name="InsidePlatform9" parent="." instance=ExtResource("2_rdhm0")]
+rotation = 0.91
+y_komponente = 138.0
+start_rotation = 0.91
+width = 48.0
+
+[node name="InsidePlatform10" parent="." instance=ExtResource("2_rdhm0")]
+rotation = 1.47
+y_komponente = 130.0
+start_rotation = 1.47
 width = 48.0
 
 [node name="InsidePlatformMoveable" parent="." instance=ExtResource("3_ighpp")]
-position = Vector2(245, 121)
-rotation = -1.13446
-map_centrum = Vector2(245, 121)
+position = Vector2(-132, 309)
+rotation = 0.568383
+color = 1
+
+[node name="InsidePlatformMoveable2" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(-283, -31)
+rotation = 1.80989
+color = 1
+
+[node name="InsidePlatformMoveable3" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(-187, -167)
+rotation = -0.624583
+color = 1
+
+[node name="InsidePlatformMoveable4" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(230, -21)
+rotation = 0.433264
+width = 80.0
+color = 1
+
+[node name="InsidePlatformMoveable5" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(218, 121)
+rotation = 2.15227
+color = 1
+
+[node name="InsidePlatformMoveable6" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(46, 163)
+color = 1
+
+[node name="InsidePlatformMoveable7" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(106, 230)
+color = 1
+
+[node name="InsidePlatformMoveable8" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(-56, -21)
+color = 1
+
+[node name="Pickup" parent="." instance=ExtResource("4_lrkle")]
+position = Vector2(214, 81)

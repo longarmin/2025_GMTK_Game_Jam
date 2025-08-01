@@ -8,12 +8,11 @@ resource_local_to_scene = true
 size = Vector2(160, 16)
 
 [node name="InsidePlatform" type="AnimatableBody2D"]
-rotation = -33.1957
 collision_layer = 2
 collision_mask = 0
 script = ExtResource("1_twxbr")
 y_komponente = 400.0
-start_rotation = null
+color = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
