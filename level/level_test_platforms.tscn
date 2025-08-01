@@ -31,7 +31,6 @@ width = 112.0
 [node name="Player" parent="." instance=ExtResource("3_1enlp")]
 position = Vector2(-31, 179)
 rotation = 0.00571004
-platform_on_leave = 2
 max_speed = 150
 max_fall_speed = 300
 jump_height = 60.0

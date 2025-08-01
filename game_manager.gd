@@ -21,3 +21,9 @@ var scenes: Dictionary[GameState, PackedScene] = {
 func change_state(new_state: GameState) -> void:
 	current_state = new_state
 	get_tree().change_scene_to_packed(scenes[new_state])
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("speed_up"):
+		rot_spd -= 0.1
+	elif event.is_action_pressed("speed_down"):
+		rot_spd += 0.1

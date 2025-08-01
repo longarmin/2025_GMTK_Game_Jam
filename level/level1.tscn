@@ -13,6 +13,7 @@ script = ExtResource("1_afkyo")
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("3_gd1gh")]
 position = Vector2(268, 251)
+platform_on_leave = 0
 
 [node name="Pickup" parent="." instance=ExtResource("5_afkyo")]
 position = Vector2(-78, -9)
