@@ -1,55 +1,61 @@
-[gd_scene load_steps=3 format=3 uid="uid://r18ff55paw4d"]
+[gd_scene load_steps=4 format=3 uid="uid://6yaedci75bu"]
 
-[ext_resource type="PackedScene" uid="uid://b555i5jx3xg5j" path="res://platform/circle.tscn" id="1_5bvcl"]
-[ext_resource type="PackedScene" uid="uid://xjj3eoht8t4r" path="res://platform/inside_platform.tscn" id="2_rdhm0"]
+[ext_resource type="PackedScene" uid="uid://ddme0xyevwull" path="res://platform/circle.tscn" id="1_rdhm0"]
+[ext_resource type="PackedScene" path="res://platform/inside_platform.tscn" id="2_rdhm0"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="3_ighpp"]
 
 [node name="Lvl1Platform" type="Node2D"]
 
-[node name="Circle" parent="." instance=ExtResource("1_5bvcl")]
+[node name="Circle" parent="." instance=ExtResource("1_rdhm0")]
 
 [node name="InsidePlatform" parent="." instance=ExtResource("2_rdhm0")]
-rotation = -0.176734
+rotation = -0.06
 y_komponente = 350.0
 start_rotation = -0.06
 
 [node name="InsidePlatform2" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 0.383266
+rotation = 0.5
 y_komponente = 300.0
 start_rotation = 0.5
 width = 96.0
 
 [node name="InsidePlatform3" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 0.883266
+rotation = 1.0
 y_komponente = 250.0
 start_rotation = 1.0
 width = 96.0
 
 [node name="InsidePlatform4" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 1.38327
+rotation = 1.5
 y_komponente = 200.0
 start_rotation = 1.5
 width = 96.0
 
 [node name="InsidePlatform5" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 1.88327
+rotation = 2.0
 y_komponente = 150.0
 start_rotation = 2.0
 width = 80.0
 
 [node name="InsidePlatform6" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 2.38326
+rotation = 2.5
 y_komponente = 100.0
 start_rotation = 2.5
 width = 96.0
 
 [node name="InsidePlatform7" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 3.20326
+rotation = 3.32
 y_komponente = 50.0
 start_rotation = 3.32
 width = 48.0
 
 [node name="InsidePlatform8" parent="." instance=ExtResource("2_rdhm0")]
-rotation = 4.38327
+rotation = 4.5
 y_komponente = 40.0
 start_rotation = 4.5
 width = 48.0
+
+[node name="InsidePlatformMoveable" parent="." instance=ExtResource("3_ighpp")]
+position = Vector2(245, 121)
+rotation = -1.13446
+map_centrum = Vector2(245, 121)

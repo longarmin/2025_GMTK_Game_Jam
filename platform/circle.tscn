@@ -1,13 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://b555i5jx3xg5j"]
+[gd_scene load_steps=3 format=3 uid="uid://ddme0xyevwull"]
 
 [ext_resource type="PackedScene" uid="uid://c10ucj5wvv6hj" path="res://platform/platform.tscn" id="1_fg06x"]
-[ext_resource type="Script" uid="uid://c0v1d26nmx82s" path="res://platform/circle.gd" id="1_joo2h"]
+[ext_resource type="Script" path="res://platform/circle.gd" id="1_joo2h"]
 
 [node name="Circle" type="Node2D"]
 script = ExtResource("1_joo2h")
 
 [node name="Platform" parent="." instance=ExtResource("1_fg06x")]
-rotation = 0.0
 width = 144.0
 
 [node name="Platform2" parent="." instance=ExtResource("1_fg06x")]

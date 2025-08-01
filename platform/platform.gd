@@ -32,7 +32,6 @@ func _ready() -> void:
 	set_height(height)
 	set_one_way_collision(one_way_collision)
 	set_color(color)
-	rotation = 0.0
 	#var i = 0
 	#var j = 0
 	#for child in get_children():
