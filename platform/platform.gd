@@ -43,6 +43,8 @@ func _ready() -> void:
 			#child.rotation_degrees = j * 20
 			#j += 1
 func _process(delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
 	rotation += delta * rot_spd
 	
 func set_width(value: float) -> void:

@@ -1,17 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://c10ucj5wvv6hj"]
+[gd_scene load_steps=4 format=3 uid="uid://xjj3eoht8t4r"]
 
-[ext_resource type="Script" uid="uid://d0h41hwes4o1u" path="res://platform/platform.gd" id="1_2q7nh"]
-[ext_resource type="Texture2D" uid="uid://cj0vto6ljiewx" path="res://platform/ground_platform.png" id="2_2q7nh"]
+[ext_resource type="Script" uid="uid://ch5vrw444mn3f" path="res://platform/inside_platform.gd" id="1_twxbr"]
+[ext_resource type="Texture2D" uid="uid://cj0vto6ljiewx" path="res://platform/ground_platform.png" id="2_w3fec"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_802t3"]
 resource_local_to_scene = true
 size = Vector2(160, 16)
 
-[node name="Platform" type="AnimatableBody2D"]
-rotation = -1.42774
+[node name="InsidePlatform" type="AnimatableBody2D"]
+rotation = -33.1957
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("1_2q7nh")
+script = ExtResource("1_twxbr")
+y_komponente = 400.0
+start_rotation = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
@@ -31,7 +33,7 @@ offset_right = 80.0
 offset_bottom = 408.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_2q7nh")
+texture = ExtResource("2_w3fec")
 patch_margin_left = 5
 patch_margin_top = 5
 patch_margin_right = 5

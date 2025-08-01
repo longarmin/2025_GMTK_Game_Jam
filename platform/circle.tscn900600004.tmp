@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://b555i5jx3xg5j"]
+
+[ext_resource type="PackedScene" uid="uid://c10ucj5wvv6hj" path="res://platform/platform.tscn" id="1_fg06x"]
+[ext_resource type="Script" uid="uid://c0v1d26nmx82s" path="res://platform/circle.gd" id="1_joo2h"]
+
+[node name="Circle" type="Node2D"]
+rotation = 6.07473
+script = ExtResource("1_joo2h")
+
+[node name="Platform" parent="." instance=ExtResource("1_fg06x")]
+width = 144.0
+
+[node name="Platform2" parent="." instance=ExtResource("1_fg06x")]
+rotation = 0.349066
+width = 144.0
+
+[node name="Platform3" parent="." instance=ExtResource("1_fg06x")]
+rotation = 0.698132
+width = 144.0
+
+[node name="Platform4" parent="." instance=ExtResource("1_fg06x")]
+rotation = 1.0472
+width = 144.0
+
+[node name="Platform5" parent="." instance=ExtResource("1_fg06x")]
+rotation = 1.39626
+width = 144.0
+
+[node name="Platform6" parent="." instance=ExtResource("1_fg06x")]
+rotation = 1.74533
+width = 144.0
+
+[node name="Platform7" parent="." instance=ExtResource("1_fg06x")]
+rotation = 2.0944
+width = 144.0
+
+[node name="Platform8" parent="." instance=ExtResource("1_fg06x")]
+rotation = 2.44346
+width = 144.0
+
+[node name="Platform9" parent="." instance=ExtResource("1_fg06x")]
+rotation = 2.79253
+width = 144.0
+
+[node name="Platform10" parent="." instance=ExtResource("1_fg06x")]
+rotation = 3.14159
+width = 144.0
+
+[node name="Platform11" parent="." instance=ExtResource("1_fg06x")]
+rotation = 3.49066
+width = 144.0
+
+[node name="Platform12" parent="." instance=ExtResource("1_fg06x")]
+rotation = 3.83972
+width = 144.0
+
+[node name="Platform13" parent="." instance=ExtResource("1_fg06x")]
+rotation = 4.18879
+width = 144.0
+
+[node name="Platform14" parent="." instance=ExtResource("1_fg06x")]
+rotation = 4.53786
+width = 144.0
+
+[node name="Platform15" parent="." instance=ExtResource("1_fg06x")]
+rotation = 4.88692
+width = 144.0
+
+[node name="Platform16" parent="." instance=ExtResource("1_fg06x")]
+rotation = 5.23599
+width = 144.0
+
+[node name="Platform17" parent="." instance=ExtResource("1_fg06x")]
+rotation = 5.58505
+width = 144.0
+
+[node name="Platform18" parent="." instance=ExtResource("1_fg06x")]
+rotation = 5.93412
+width = 144.0

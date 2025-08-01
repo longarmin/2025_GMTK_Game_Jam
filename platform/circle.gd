@@ -2,7 +2,6 @@
 
 extends Node2D
 
-@export var rot_speed : float = 0.1
 
 func _ready() -> void:
 	rotation = 0.0
@@ -13,4 +12,4 @@ func _ready() -> void:
 			i += 1
 
 func _process(delta: float) -> void:
-	rotation +=delta * rot_speed
+	pass
