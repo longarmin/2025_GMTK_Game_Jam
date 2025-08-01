@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://6yaedci75bu"]
 
 [ext_resource type="PackedScene" uid="uid://ddme0xyevwull" path="res://platform/circle.tscn" id="1_rdhm0"]
-[ext_resource type="PackedScene" path="res://platform/inside_platform.tscn" id="2_rdhm0"]
+[ext_resource type="PackedScene" uid="uid://xjj3eoht8t4r" path="res://platform/inside_platform.tscn" id="2_rdhm0"]
 [ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="3_ighpp"]
 
 [node name="Lvl1Platform" type="Node2D"]
@@ -56,6 +56,5 @@ start_rotation = 4.5
 width = 48.0
 
 [node name="InsidePlatformMoveable" parent="." instance=ExtResource("3_ighpp")]
-position = Vector2(245, 121)
-rotation = -1.13446
-map_centrum = Vector2(245, 121)
+position = Vector2(-87, 317)
+rotation = 0.136357
