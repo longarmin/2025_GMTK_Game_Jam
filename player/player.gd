@@ -36,6 +36,7 @@ var jump_count := 0
 @onready var jump_input_buffer_timer := Timer.new()
 @onready var energy_timer := Timer.new()
 @onready var dust: GPUParticles2D = %Dust
+@onready var energy_bar: ProgressBar = %EnergyBar
 
 @onready var jump_speed = calculate_jump_speed(jump_height, jump_time_to_peak)
 @onready var jump_gravity := calculate_jump_gravity(jump_height, jump_time_to_peak)
@@ -206,5 +207,14 @@ func play_tween_touch_ground() -> void:
 func set_energy(new_energy: float) -> void:
 	energy = new_energy
 	energy = clampf(energy, 0.0, 100.0)
+	energy_bar.value = energy
+
+	if energy > 70.0:
+		energy_bar.modulate = Color(0.0, 1.0, 0.0) # Green
+	elif energy > 30.0:
+		energy_bar.modulate = Color(1.0, 1.0, 0.0) # Yellow
+	else:
+		energy_bar.modulate = Color(1.0, 0.0, 0.0) # Red
+	
 	if energy == 0.0:
 		print("Keine Energie mehr.")

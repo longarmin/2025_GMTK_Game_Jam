@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://q1cd8nrxbx21"]
+
+[ext_resource type="Script" uid="uid://bpbs6h4qe7f0t" path="res://ui/splash_menu.gd" id="1_tuqpv"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="1_xjxkb"]
+[ext_resource type="Texture2D" uid="uid://dl2rl8uxj1c6l" path="res://assets/ui/logo_placeholder.png" id="2_xju0p"]
+
+[sub_resource type="Animation" id="Animation_tuqpv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xju0p"]
+resource_name = "enter"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rhysa"]
+_data = {
+&"RESET": SubResource("Animation_tuqpv"),
+&"enter": SubResource("Animation_xju0p")
+}
+
+[node name="SplashMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tuqpv")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_xjxkb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 133.0
+offset_top = 75.0
+offset_right = 293.0
+offset_bottom = 165.0
+texture = ExtResource("2_xju0p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_rhysa")
+}

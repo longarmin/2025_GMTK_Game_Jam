@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://3j87k68xo4ug"]
+[gd_scene load_steps=20 format=3 uid="uid://3j87k68xo4ug"]
 
 [ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/lucy/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/lucy/run/003.png" id="9_c35mf"]
 [ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/lucy/run/004.png" id="10_65viv"]
 [ext_resource type="Texture2D" uid="uid://pk8wb3owg84f" path="res://assets/lucy/run/005.png" id="11_x7c3f"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="16_32hag"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7qyjy"]
 animations = [{
@@ -123,3 +124,13 @@ offset_left = -20.0
 offset_top = -67.0
 offset_right = 20.0
 offset_bottom = -44.0
+
+[node name="EnergyBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -14.0
+offset_top = -15.0
+offset_right = 14.0
+offset_bottom = -11.0
+theme = ExtResource("16_32hag")
+value = 50.0
+show_percentage = false
