@@ -13,70 +13,60 @@
 rotation = -0.06
 y_komponente = 350.0
 start_rotation = -0.06
-color = 1
 
 [node name="InsidePlatform2" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 0.8
 y_komponente = 305.0
 start_rotation = 0.8
 width = 96.0
-color = 1
 
 [node name="InsidePlatform3" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 1.24
 y_komponente = 305.0
 start_rotation = 1.24
 width = 96.0
-color = 1
 
 [node name="InsidePlatform4" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 3.0
 y_komponente = 225.0
 start_rotation = 3.0
 width = 96.0
-color = 1
 
 [node name="InsidePlatform5" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 3.53
 y_komponente = 212.0
 start_rotation = 3.53
 width = 80.0
-color = 1
 
 [node name="InsidePlatform6" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 4.25
 y_komponente = 189.0
 start_rotation = 4.25
 width = 96.0
-color = 1
 
 [node name="InsidePlatform7" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 4.81
 y_komponente = 269.0
 start_rotation = 4.81
 width = 48.0
-color = 1
 
 [node name="InsidePlatform8" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 0.4
 y_komponente = 138.0
 start_rotation = 0.4
 width = 48.0
-color = 1
 
 [node name="InsidePlatform9" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 0.91
 y_komponente = 138.0
 start_rotation = 0.91
 width = 48.0
-color = 1
 
 [node name="InsidePlatform10" parent="." instance=ExtResource("2_rdhm0")]
 rotation = 1.47
 y_komponente = 130.0
 start_rotation = 1.47
 width = 48.0
-color = 1
 
 [node name="InsidePlatformMoveable" parent="." instance=ExtResource("3_ighpp")]
 position = Vector2(-132, 309)

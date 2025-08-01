@@ -100,6 +100,9 @@ gravity = Vector3(0, -8, 0)
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 2
+slide_on_ceiling = false
+wall_min_slide_angle = 0.785398
+floor_stop_on_slope = false
 platform_on_leave = 2
 script = ExtResource("1_wodsf")
 
