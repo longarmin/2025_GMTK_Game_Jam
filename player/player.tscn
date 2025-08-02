@@ -1,15 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://3j87k68xo4ug"]
+[gd_scene load_steps=16 format=3 uid="uid://3j87k68xo4ug"]
 
 [ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/rat/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
-[ext_resource type="Texture2D" uid="uid://ckdstkswgy7yp" path="res://assets/rat/idle/blinking.png" id="2_ebec5"]
 [ext_resource type="Texture2D" uid="uid://bb43c0s5ktt4e" path="res://assets/rat/fall.png" id="2_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://vcwnftmgqlr4" path="res://assets/rat/dust_particle.png" id="2_wodsf"]
 [ext_resource type="Texture2D" uid="uid://c3i67gf5xtur1" path="res://assets/rat/idle/crouching.png" id="3_yllr7"]
 [ext_resource type="Texture2D" uid="uid://1w6y4aov8x8i" path="res://assets/rat/idle/looking_right.png" id="4_kb6p2"]
-[ext_resource type="Texture2D" uid="uid://cxslh8teup70q" path="res://assets/rat/idle/looking_front.png" id="5_wodsf"]
 [ext_resource type="Texture2D" uid="uid://2xur0ruvk44k" path="res://assets/rat/jump.png" id="7_yllr7"]
-[ext_resource type="Texture2D" uid="uid://byi5d5liq08bu" path="res://assets/rat/run/000.png" id="9_wodsf"]
 [ext_resource type="Texture2D" uid="uid://cqhwdqlpfm50e" path="res://assets/rat/run/001.png" id="10_32hag"]
 [ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="11_tqiix"]
 [ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/rat/run/003.png" id="12_e7oew"]
@@ -27,31 +24,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 20.0,
+"duration": 10.0,
 "texture": ExtResource("1_2ieo8")
 }, {
-"duration": 1.0,
-"texture": ExtResource("2_ebec5")
-}, {
-"duration": 2.0,
-"texture": ExtResource("1_2ieo8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_ebec5")
-}, {
-"duration": 0.7,
+"duration": 0.6,
 "texture": ExtResource("3_yllr7")
 }, {
 "duration": 5.0,
 "texture": ExtResource("4_kb6p2")
 }, {
-"duration": 0.7,
-"texture": ExtResource("3_yllr7")
-}, {
-"duration": 5.0,
-"texture": ExtResource("5_wodsf")
-}, {
-"duration": 0.7,
+"duration": 0.6,
 "texture": ExtResource("3_yllr7")
 }],
 "loop": true,
@@ -67,9 +49,6 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 0.4,
-"texture": ExtResource("9_wodsf")
-}, {
 "duration": 0.4,
 "texture": ExtResource("10_32hag")
 }, {
@@ -88,7 +67,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wodsf"]
-size = Vector2(8, 14)
+size = Vector2(14, 8)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kb6p2"]
 particle_flag_disable_z = true
@@ -106,8 +85,10 @@ max_speed = 100
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_7qyjy")
 animation = &"Run"
+frame_progress = 0.677801
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_wodsf")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
