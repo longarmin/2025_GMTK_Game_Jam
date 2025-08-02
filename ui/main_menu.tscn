@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://btktvntxtuyxm"]
+[gd_scene load_steps=4 format=3 uid="uid://btktvntxtuyxm"]
 
 [ext_resource type="Script" uid="uid://bawag4o6gr4eu" path="res://ui/main_menu.gd" id="1_0dkrt"]
 [ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="1_t7e0r"]
+[ext_resource type="AudioStream" uid="uid://cl24q6m3pcif5" path="res://assets/music/main_theme.wav" id="3_wk0pr"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -99,3 +100,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("1_t7e0r")
 text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wk0pr")
+autoplay = true

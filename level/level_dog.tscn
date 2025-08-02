@@ -157,41 +157,41 @@ width = 48.0
 [node name="RotationCenter" type="Node2D" parent="Platforms"]
 unique_name_in_owner = true
 
-[node name="InsidePlatformMoveable" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(-132, 309)
 rotation = 0.568383
 color = 1
 
-[node name="InsidePlatformMoveable2" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform2" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(-283, -31)
 rotation = 1.80989
 color = 1
 
-[node name="InsidePlatformMoveable3" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform3" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(-187, -167)
 rotation = -0.624583
 color = 1
 
-[node name="InsidePlatformMoveable4" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform4" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(230, -21)
 rotation = 0.433264
 width = 80.0
 color = 1
 
-[node name="InsidePlatformMoveable5" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform5" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(218, 121)
 rotation = 2.15227
 color = 1
 
-[node name="InsidePlatformMoveable6" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(46, 163)
 color = 1
 
-[node name="InsidePlatformMoveable7" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform7" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(106, 230)
 color = 1
 
-[node name="InsidePlatformMoveable8" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
+[node name="Platform8" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(-56, -21)
 color = 1
 
