@@ -40,8 +40,9 @@ text = "Escaped!"
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Very good! You have escaped this prison.
-But there waits another one...Stay focused!"
+theme = ExtResource("2_also8")
+bbcode_enabled = true
+text = "[b]ESCAPE SUCCESSFUL![/b]"
 fit_content = true
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer"]

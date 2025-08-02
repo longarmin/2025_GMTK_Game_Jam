@@ -7,10 +7,15 @@ bg_color = Color(0, 0, 0, 1)
 bg_color = Color(0.223529, 0.223529, 0.223529, 0.917647)
 
 [resource]
+default_font_size = 25
 MarginContainer/constants/margin_bottom = 16
 MarginContainer/constants/margin_left = 16
 MarginContainer/constants/margin_right = 16
 MarginContainer/constants/margin_top = 16
 Panel/styles/panel = SubResource("StyleBoxFlat_tsbh2")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_g1fjd")
+RichTextLabel/colors/default_color = Color(0.4004, 0.77, 0.64064, 1)
+RichTextLabel/colors/font_outline_color = Color(0.758027, 0.198069, 0.746312, 1)
+RichTextLabel/colors/font_selected_color = Color(0.835294, 0, 0, 0.843137)
+RichTextLabel/fonts/bold_font = null
 VBoxContainer/constants/separation = 8
