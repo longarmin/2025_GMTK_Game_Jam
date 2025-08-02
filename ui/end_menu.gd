@@ -6,6 +6,8 @@ class_name EndMenu extends Control
 func _ready() -> void:
 	main_menu_button.pressed.connect(func() -> void:
 		GameManager.change_state(GameManager.GameState.MAIN_MENU)
+		GameManager.current_level = 0
+		GameManager.lives = 3
 	)
 	exit_game_button.pressed.connect(func() -> void:
 		get_tree().quit()
