@@ -221,6 +221,16 @@ layout_mode = 2
 theme = ExtResource("9_end4s")
 text = "Level: Dog"
 
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+alignment = 2
+
+[node name="EndLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("9_end4s")
+text = "bla"
+horizontal_alignment = 1
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {

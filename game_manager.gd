@@ -9,6 +9,7 @@ enum GameState {
 	END_MENU
 }
 
+const STANDARD_ROT_SPD : float = -0.2
 var current_state: GameState
 var rot_spd: float = -0.2: set = change_rot_speed
 var current_level := 0
@@ -33,6 +34,7 @@ var levels: Array[PackedScene] = [
 func change_state(new_state: GameState) -> void:
 	current_state = new_state
 	if current_state == GameState.LEVEL_SUCCESS:
+		change_state(GameState.END_MENU)
 		if current_level >= levels.size():
 			change_state(GameState.END_MENU)
 			return

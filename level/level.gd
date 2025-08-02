@@ -11,6 +11,7 @@ class_name Level extends Node2D
 var has_timer_started := false
 
 func _ready() -> void:
+	GameManager.rot_spd = GameManager.STANDARD_ROT_SPD
 	end_label.hide()
 	timer_start.autostart = false
 	timer_start.one_shot = true
@@ -39,7 +40,8 @@ func _process(_delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	# Zwecks Debugging und Testing
 	if event.is_action_pressed("level_success"):
-		GameManager.change_state(GameManager.GameState.LEVEL_SUCCESS)
+		GameManager.change_level()
+		#GameManager.change_state(GameManager.GameState.LEVEL_SUCCESS)
 	if event.is_action_pressed("ui_accept"):
 		animation.advance(5.0)
 

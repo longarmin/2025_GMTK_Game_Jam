@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://did8smu7inqpc"]
+[gd_scene load_steps=10 format=3 uid="uid://cydepsx8etnil"]
 
 [ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_42gnk"]
-[ext_resource type="Texture2D" path="res://assets/ui/background_proto.png" id="2_fanh3"]
+[ext_resource type="Texture2D" uid="uid://c54glysivh72f" path="res://assets/ui/background_proto.png" id="2_fanh3"]
 [ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_5srbf"]
 [ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_i4x62"]
 [ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="5_b0ly0"]
@@ -98,19 +98,16 @@ unique_name_in_owner = true
 [node name="Platform" parent="RotationCenter" instance=ExtResource("5_b0ly0")]
 position = Vector2(-35, 58)
 rotation = 0.563624
-scale = Vector2(1, 1)
 width = 48.0
 
 [node name="Platform4" parent="RotationCenter" instance=ExtResource("5_b0ly0")]
 position = Vector2(40, -55)
 rotation = 0.563624
-scale = Vector2(1, 1)
 width = 64.0
 
 [node name="Platform7" parent="RotationCenter" instance=ExtResource("5_b0ly0")]
 position = Vector2(27, -22)
 rotation = 1.57862
-scale = Vector2(1, 1)
 width = 32.0
 
 [node name="Platform2" parent="RotationCenter" instance=ExtResource("5_b0ly0")]
