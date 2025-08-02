@@ -12,6 +12,7 @@ enum GameState {
 var current_state: GameState
 var rot_spd: float = -0.2
 var current_level := 0
+var lives := 3: set = change_live
 
 
 var scenes: Dictionary[GameState, PackedScene] = {
@@ -56,3 +57,8 @@ func _input(event: InputEvent) -> void:
 func change_level() -> void:
 	get_tree().change_scene_to_packed(levels[current_level])
 	current_level += 1
+
+func change_live(new_value) -> void:
+	lives = new_value
+	if lives <= 0:
+		change_state(GameState.DIED_MENU)

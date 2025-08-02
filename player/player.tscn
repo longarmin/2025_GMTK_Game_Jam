@@ -98,12 +98,9 @@ emitting = false
 texture = ExtResource("2_wodsf")
 process_material = SubResource("ParticleProcessMaterial_kb6p2")
 
-[node name="Label" type="Label" parent="."]
-unique_name_in_owner = true
-offset_left = -20.0
-offset_top = -67.0
-offset_right = 20.0
-offset_bottom = -44.0
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
+collision_mask = 2
 
 [node name="EnergyBar" type="ProgressBar" parent="."]
 unique_name_in_owner = true
@@ -115,6 +112,10 @@ theme = ExtResource("16_32hag")
 value = 50.0
 show_percentage = false
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 20)
-collision_mask = 2
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -20.0
+offset_top = -48.0
+offset_right = 20.0
+offset_bottom = -25.0
