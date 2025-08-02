@@ -74,6 +74,7 @@ _data = {
 script = ExtResource("1_4cdig")
 
 [node name="Background" parent="." instance=ExtResource("2_end4s")]
+position = Vector2(1, -67)
 
 [node name="Circle" parent="." instance=ExtResource("2_4cdig")]
 platform_count = 16
