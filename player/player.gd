@@ -76,9 +76,14 @@ func _physics_process(delta: float) -> void:
 	raycast.target_position = Vector2(0, 40)
 	if raycast.is_colliding():
 		var normal = raycast.get_collision_normal()
-		rotation = move_toward(rotation, normal.angle() + PI / 2, 4 * delta)
+		#rotation
+		#if normal.y > -0.5:
+			#normal.y = -0.5
+			#normal.x = sign(normal.x)*0.5
+			#rotation = normal.angle() + PI/2
+		rotation = move_toward(rotation, normal.angle() + PI / 2, 10 * delta)
 	else:
-		rotation = move_toward(rotation, 0.0, 4 * delta)
+		rotation = move_toward(rotation, 0.0, 10 * delta)
 	#rotation = (position.y - old_pos_y)
 	#old_pos_y = position.y
 	
@@ -166,9 +171,18 @@ func _transition_to_state(new_state: State):
 			if previous_state == State.FALL:
 				play_tween_touch_ground()
 		State.JUMP:
-			velocity.y = jump_speed
+			if raycast.is_colliding():
+				var normal = raycast.get_collision_normal()
+				if abs(normal.y) < 0.3:
+					velocity.y = jump_speed * -sign(normal.y)*0.3
+				else:
+					velocity.y = jump_speed * -normal.y
+				velocity.x = direction_x * jump_horizontal_speed + jump_speed * -normal.x
+			else:
+				velocity.y = jump_speed
+				velocity.x = direction_x * jump_horizontal_speed
+				
 			current_gravity = jump_gravity
-			velocity.x = direction_x * jump_horizontal_speed
 			animated_sprite.play("Jump")
 			jump_count = 1
 			play_tween_jump()

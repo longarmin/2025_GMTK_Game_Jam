@@ -83,9 +83,10 @@ max_speed = 100
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_7qyjy")
 animation = &"Run"
-frame_progress = 0.677801
+frame_progress = 0.327328
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
