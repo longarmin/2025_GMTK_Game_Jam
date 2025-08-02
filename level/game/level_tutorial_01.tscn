@@ -1,14 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://dlxg80b58vwtr"]
+[gd_scene load_steps=11 format=3 uid="uid://bg78nxk4mujtv"]
 
-[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_2c70j"]
-[ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="2_jou30"]
-[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_y4pbd"]
-[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_pe04t"]
-[ext_resource type="PackedScene" uid="uid://xlya6p4x0rys" path="res://pickup/pickup.tscn" id="5_s83hd"]
-[ext_resource type="PackedScene" uid="uid://xjj3eoht8t4r" path="res://platform/rotating_platform.tscn" id="6_55oaj"]
-[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="7_3y0wy"]
-[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="8_4xm88"]
-[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="9_k3van"]
+[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_haiwc"]
+[ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="2_ndf14"]
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_70dv7"]
+[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_b4xa8"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="7_g6apq"]
+[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="8_rf6d4"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="9_7rq5c"]
 
 [sub_resource type="Animation" id="Animation_tdwm0"]
 length = 0.001
@@ -71,43 +69,61 @@ _data = {
 &"intro": SubResource("Animation_qsrdh")
 }
 
-[node name="LevelDog" type="Node2D"]
-script = ExtResource("1_2c70j")
+[node name="LevelTutorial01" type="Node2D"]
+script = ExtResource("1_haiwc")
+rotation_speed = -0.4
 
-[node name="Background" parent="." instance=ExtResource("2_jou30")]
+[node name="Background" parent="." instance=ExtResource("2_ndf14")]
 position = Vector2(1, -67)
 
-[node name="Circle" parent="." instance=ExtResource("3_y4pbd")]
-platform_count = 16
+[node name="Circle" parent="." instance=ExtResource("3_70dv7")]
+platform_count = 8
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource("4_pe04t")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("4_b4xa8")]
 unique_name_in_owner = true
-position = Vector2(25, 134)
+position = Vector2(33, 186)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="Pickup" parent="." instance=ExtResource("5_s83hd")]
-position = Vector2(214, 81)
-
-[node name="Pickup2" parent="." instance=ExtResource("5_s83hd")]
-position = Vector2(-78, -9)
-
 [node name="Platforms" type="Node2D" parent="."]
-
-[node name="InsidePlatform" parent="Platforms" instance=ExtResource("6_55oaj")]
-rotation = -0.06
-y_komponente = 273.0
-start_rotation = -0.06
 
 [node name="RotationCenter" type="Node2D" parent="Platforms"]
 unique_name_in_owner = true
 
-[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("7_3y0wy")]
-position = Vector2(-208, 210)
-rotation = -0.722103
+[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(-75, 142)
+rotation = 0.823981
 color = 1
 
-[node name="Escape" parent="." instance=ExtResource("8_4xm88")]
+[node name="Platform2" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(-124, 12)
+rotation = 1.57195
+color = 1
+
+[node name="Platform3" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(-56, -92)
+rotation = 2.71965
+color = 1
+
+[node name="Platform4" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(40, -87)
+rotation = 4.11841
+width = 96.0
+color = 1
+
+[node name="Platform5" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(46, -6)
+rotation = 5.24789
+width = 96.0
+color = 1
+
+[node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("7_g6apq")]
+position = Vector2(-14, 18)
+rotation = 6.56626
+width = 96.0
+color = 1
+
+[node name="Escape" parent="." instance=ExtResource("8_rf6d4")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -131,8 +147,8 @@ size_flags_vertical = 3
 [node name="StartLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/CenterContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("9_k3van")
-text = "Level: Dog"
+theme = ExtResource("9_7rq5c")
+text = "Level: Beginning"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 15
@@ -145,7 +161,7 @@ alignment = 2
 [node name="EndLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("9_k3van")
+theme = ExtResource("9_7rq5c")
 text = "bla"
 horizontal_alignment = 1
 

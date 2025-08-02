@@ -10,10 +10,12 @@ class_name Level extends Node2D
 @onready var audio_player: AudioStreamPlayer = AudioStreamPlayer.new()
 @onready var level_theme: AudioStream = preload("res://assets/music/level_theme.wav")
 
+@export var rotation_speed := GameManager.rot_spd
+
 var has_timer_started := false
 
 func _ready() -> void:
-	GameManager.rot_spd = GameManager.STANDARD_ROT_SPD
+	GameManager.rot_spd = rotation_speed
 	end_label.hide()
 	timer_start.autostart = false
 	timer_start.one_shot = true
