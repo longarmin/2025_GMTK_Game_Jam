@@ -65,7 +65,6 @@ func _ready() -> void:
 	set_energy(energy)
 	energy_timer.timeout.connect(func() -> void:
 		energy -= 1.0
-		print("Energy: " + str(energy))
 	)
 
 	
@@ -218,4 +217,4 @@ func set_energy(new_energy: float) -> void:
 		energy_bar.modulate = Color(1.0, 0.0, 0.0) # Red
 	
 	if energy == 0.0:
-		print("Keine Energie mehr.")
+		GameManager.change_state(GameManager.GameState.DIED_MENU)

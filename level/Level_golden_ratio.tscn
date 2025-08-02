@@ -1,0 +1,162 @@
+[gd_scene load_steps=9 format=3 uid="uid://cewealm8bqm5t"]
+
+[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_0ujkl"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="2_jxyt7"]
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circles/circle_custom.tscn" id="3_5bmcf"]
+[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_3376f"]
+[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="5_uc1yx"]
+
+[sub_resource type="Animation" id="Animation_tdwm0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player/Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player/Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qsrdh"]
+resource_name = "intro"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player/Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 4, 5),
+"transitions": PackedFloat32Array(3.73213, 0.999999, 0.999999, 2.92817),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player/Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 4, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 3.13834),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-274, -203), Vector2(-274, -203), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tdwm0"]
+_data = {
+&"RESET": SubResource("Animation_tdwm0"),
+&"intro": SubResource("Animation_qsrdh")
+}
+
+[node name="LevelTestSimple" type="Node2D"]
+script = ExtResource("1_0ujkl")
+
+[node name="RotationCenter" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="InsidePlatformMoveable" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-47, 139)
+rotation = 0.496692
+width = 48.0
+
+[node name="InsidePlatformMoveable2" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-77, 111)
+rotation = 0.990295
+width = 48.0
+
+[node name="InsidePlatformMoveable3" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-119, 66)
+rotation = 1.26576
+width = 48.0
+
+[node name="InsidePlatformMoveable10" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-161, 20)
+rotation = 1.5708
+width = 80.0
+
+[node name="InsidePlatformMoveable11" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-135, -82)
+rotation = 2.25296
+width = 80.0
+
+[node name="InsidePlatformMoveable12" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-33, -121)
+rotation = 3.11691
+width = 80.0
+
+[node name="InsidePlatformMoveable13" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(87, -84)
+rotation = -2.23618
+width = 80.0
+
+[node name="InsidePlatformMoveable14" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(103, 38)
+rotation = -1.01324
+width = 80.0
+
+[node name="InsidePlatformMoveable4" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-113, 2)
+rotation = 1.55732
+width = 48.0
+
+[node name="InsidePlatformMoveable5" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-88, -56)
+rotation = 2.33966
+width = 48.0
+
+[node name="InsidePlatformMoveable6" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(-28, -83)
+rotation = 3.03038
+width = 32.0
+
+[node name="InsidePlatformMoveable7" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(26, -78)
+rotation = -2.80129
+width = 32.0
+
+[node name="InsidePlatformMoveable8" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(70, -22)
+rotation = -1.78695
+width = 64.0
+
+[node name="InsidePlatformMoveable9" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+position = Vector2(27, 49)
+rotation = -0.352856
+width = 64.0
+
+[node name="CircleCustom" parent="." instance=ExtResource("3_5bmcf")]
+
+[node name="Player" parent="." instance=ExtResource("4_3376f")]
+unique_name_in_owner = true
+position = Vector2(40, 181)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_tdwm0")
+}
+
+[node name="Escape" parent="." instance=ExtResource("5_uc1yx")]

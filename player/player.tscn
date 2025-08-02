@@ -102,6 +102,7 @@ gravity = Vector3(0, -8, 0)
 collision_mask = 2
 platform_on_leave = 2
 script = ExtResource("1_wodsf")
+max_speed = 100
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
@@ -135,5 +136,3 @@ offset_bottom = -11.0
 theme = ExtResource("16_32hag")
 value = 50.0
 show_percentage = false
-
-[node name="Camera2D" type="Camera2D" parent="."]
