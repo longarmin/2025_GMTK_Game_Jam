@@ -130,13 +130,23 @@ rotation = 2.30392
 width = 64.0
 
 [node name="Platform8" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
-position = Vector2(-50, -69)
+position = Vector2(-65, -61)
 rotation = 2.30392
 width = 64.0
 
 [node name="Platform9" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
-position = Vector2(24, -52)
+position = Vector2(-15, -41)
 rotation = 3.14031
 width = 64.0
+
+[node name="Platform12" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+position = Vector2(46, -42)
+rotation = 4.47862
+width = 64.0
+
+[node name="Platform11" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+position = Vector2(-27, -118)
+rotation = 3.94468
+width = 128.0
 
 [node name="Escape" parent="." instance=ExtResource("5_td75g")]

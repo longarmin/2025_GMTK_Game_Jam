@@ -169,7 +169,7 @@ func _transition_to_state(new_state: State):
 			if raycast.is_colliding():
 				var normal = raycast.get_collision_normal()
 				if abs(normal.y) < 0.3:
-					velocity.y = jump_speed * -sign(normal.y)*0.3
+					velocity.y = jump_speed * -sign(normal.y) * 0.3
 				else:
 					velocity.y = jump_speed * -normal.y
 				velocity.x = direction_x * jump_horizontal_speed + jump_speed * -normal.x
@@ -237,4 +237,5 @@ func set_energy(new_energy: float) -> void:
 		energy_bar.modulate = Color(1.0, 0.0, 0.0) # Red
 	
 	if energy == 0.0:
-		GameManager.change_state(GameManager.GameState.DIED_MENU)
+		GameManager.lives -= 1
+		get_tree().reload_current_scene()
