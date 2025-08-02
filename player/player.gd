@@ -51,6 +51,9 @@ var old_pos_y := position.y
 @onready var energy := max_energy: set = set_energy
 @onready var raycast = $RayCast2D
 
+@onready var jump_audio: AudioStreamPlayer = %JumpAudio
+@onready var fall_audio: AudioStreamPlayer = %FallAudio
+@onready var death_audio: AudioStreamPlayer = %DeathAudio
 
 func _ready() -> void:
 	#Debug: Slow game down:
@@ -165,6 +168,7 @@ func _transition_to_state(new_state: State):
 			jump_count = 0
 			if previous_state == State.FALL:
 				play_tween_touch_ground()
+				fall_audio.play()
 		State.JUMP:
 			if raycast.is_colliding():
 				var normal = raycast.get_collision_normal()
@@ -179,6 +183,7 @@ func _transition_to_state(new_state: State):
 				
 			current_gravity = jump_gravity
 			animated_sprite.play("Jump")
+			jump_audio.play()
 			jump_count = 1
 			play_tween_jump()
 			dust.emitting = true
@@ -237,5 +242,6 @@ func set_energy(new_energy: float) -> void:
 		energy_bar.modulate = Color(1.0, 0.0, 0.0) # Red
 	
 	if energy == 0.0:
+		death_audio.play()
 		GameManager.lives -= 1
 		get_tree().reload_current_scene()

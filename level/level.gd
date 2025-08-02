@@ -6,6 +6,8 @@ class_name Level extends Node2D
 @onready var panel: PanelContainer = %PanelContainer
 @onready var start_label: Label = %StartLabel
 @onready var timer_start: Timer = Timer.new()
+@onready var audio_player: AudioStreamPlayer = AudioStreamPlayer.new()
+@onready var level_theme: AudioStream = preload("res://assets/music/level_theme.wav")
 
 var has_timer_started := false
 
@@ -13,6 +15,10 @@ func _ready() -> void:
 	timer_start.autostart = false
 	timer_start.wait_time = 3.0
 	add_child(timer_start)
+	audio_player.stream = level_theme
+	audio_player.volume_db = -30.0
+	add_child(audio_player)
+	audio_player.play()
 	disable_all_physics(false)
 
 	animation.play("intro")

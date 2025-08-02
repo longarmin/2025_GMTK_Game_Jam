@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://3j87k68xo4ug"]
+[gd_scene load_steps=21 format=3 uid="uid://3j87k68xo4ug"]
 
 [ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/rat/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="11_tqiix"]
 [ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/rat/run/003.png" id="12_e7oew"]
 [ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/rat/run/004.png" id="13_c35mf"]
+[ext_resource type="AudioStream" uid="uid://cv4vhtmru1i17" path="res://assets/sounds/jump.wav" id="13_yllr7"]
+[ext_resource type="AudioStream" uid="uid://dmk0iu7431ogu" path="res://assets/sounds/fall.wav" id="14_kb6p2"]
+[ext_resource type="AudioStream" uid="uid://dleekyny777c" path="res://assets/sounds/death.wav" id="15_wodsf"]
 [ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="16_32hag"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7qyjy"]
@@ -71,7 +74,18 @@ size = Vector2(14, 8)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kb6p2"]
 particle_flag_disable_z = true
-gravity = Vector3(0, -8, 0)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kb6p2"]
+random_pitch = 2.0
+random_volume_offset_db = 5.0
+streams_count = 1
+stream_0/stream = ExtResource("13_yllr7")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_wodsf"]
+random_pitch = 2.0
+random_volume_offset_db = 5.0
+streams_count = 1
+stream_0/stream = ExtResource("14_kb6p2")
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 2
@@ -94,6 +108,7 @@ shape = SubResource("RectangleShape2D_wodsf")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(-6, 5)
 emitting = false
 texture = ExtResource("2_wodsf")
 process_material = SubResource("ParticleProcessMaterial_kb6p2")
@@ -119,3 +134,18 @@ offset_left = -20.0
 offset_top = -48.0
 offset_right = 20.0
 offset_bottom = -25.0
+
+[node name="JumpAudio" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_kb6p2")
+volume_db = -30.0
+
+[node name="FallAudio" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_wodsf")
+volume_db = -30.0
+
+[node name="DeathAudio" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("15_wodsf")
+volume_db = -10.0
