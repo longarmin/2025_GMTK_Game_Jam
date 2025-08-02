@@ -76,11 +76,6 @@ func _physics_process(delta: float) -> void:
 	raycast.target_position = Vector2(0, 40)
 	if raycast.is_colliding():
 		var normal = raycast.get_collision_normal()
-		#rotation
-		#if normal.y > -0.5:
-			#normal.y = -0.5
-			#normal.x = sign(normal.x)*0.5
-			#rotation = normal.angle() + PI/2
 		rotation = move_toward(rotation, normal.angle() + PI / 2, 10 * delta)
 	else:
 		rotation = move_toward(rotation, 0.0, 10 * delta)
