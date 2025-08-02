@@ -1,14 +1,14 @@
 [gd_scene load_steps=19 format=3 uid="uid://3j87k68xo4ug"]
 
-[ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/lucy/idle/idle.png" id="1_2ieo8"]
+[ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/rat/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
-[ext_resource type="Texture2D" uid="uid://ckdstkswgy7yp" path="res://assets/lucy/idle/blinking.png" id="2_ebec5"]
-[ext_resource type="Texture2D" uid="uid://bb43c0s5ktt4e" path="res://assets/lucy/fall.png" id="2_kb6p2"]
-[ext_resource type="Texture2D" uid="uid://vcwnftmgqlr4" path="res://assets/lucy/dust_particle.png" id="2_wodsf"]
-[ext_resource type="Texture2D" uid="uid://c3i67gf5xtur1" path="res://assets/lucy/idle/crouching.png" id="3_yllr7"]
-[ext_resource type="Texture2D" uid="uid://1w6y4aov8x8i" path="res://assets/lucy/idle/looking_right.png" id="4_kb6p2"]
-[ext_resource type="Texture2D" uid="uid://cxslh8teup70q" path="res://assets/lucy/idle/looking_front.png" id="5_wodsf"]
-[ext_resource type="Texture2D" uid="uid://2xur0ruvk44k" path="res://assets/lucy/jump.png" id="7_yllr7"]
+[ext_resource type="Texture2D" uid="uid://ckdstkswgy7yp" path="res://assets/rat/idle/blinking.png" id="2_ebec5"]
+[ext_resource type="Texture2D" uid="uid://bb43c0s5ktt4e" path="res://assets/rat/fall.png" id="2_kb6p2"]
+[ext_resource type="Texture2D" uid="uid://vcwnftmgqlr4" path="res://assets/rat/dust_particle.png" id="2_wodsf"]
+[ext_resource type="Texture2D" uid="uid://c3i67gf5xtur1" path="res://assets/rat/idle/crouching.png" id="3_yllr7"]
+[ext_resource type="Texture2D" uid="uid://1w6y4aov8x8i" path="res://assets/rat/idle/looking_right.png" id="4_kb6p2"]
+[ext_resource type="Texture2D" uid="uid://cxslh8teup70q" path="res://assets/rat/idle/looking_front.png" id="5_wodsf"]
+[ext_resource type="Texture2D" uid="uid://2xur0ruvk44k" path="res://assets/rat/jump.png" id="7_yllr7"]
 [ext_resource type="Texture2D" uid="uid://byi5d5liq08bu" path="res://assets/rat/run/000.png" id="9_wodsf"]
 [ext_resource type="Texture2D" uid="uid://cqhwdqlpfm50e" path="res://assets/rat/run/001.png" id="10_32hag"]
 [ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="11_tqiix"]
@@ -99,7 +99,6 @@ collision_mask = 2
 slide_on_ceiling = false
 wall_min_slide_angle = 0.785398
 floor_stop_on_slope = false
-platform_on_leave = 2
 script = ExtResource("1_wodsf")
 max_speed = 100
 
@@ -134,7 +133,6 @@ theme = ExtResource("16_32hag")
 value = 50.0
 show_percentage = false
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
 collision_mask = 2

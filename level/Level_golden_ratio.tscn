@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://cewealm8bqm5t"]
 
 [ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_0ujkl"]
-[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/inside_platform_moveable.tscn" id="2_jxyt7"]
-[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circles/circle_custom.tscn" id="3_5bmcf"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="2_jxyt7"]
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_5bmcf"]
 [ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_3376f"]
 [ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="5_uc1yx"]
 
@@ -70,80 +70,81 @@ _data = {
 [node name="LevelTestSimple" type="Node2D"]
 script = ExtResource("1_0ujkl")
 
+[node name="Circle" parent="." instance=ExtResource("3_5bmcf")]
+platform_count = 8
+
 [node name="RotationCenter" type="Node2D" parent="."]
 unique_name_in_owner = true
 
-[node name="InsidePlatformMoveable" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-47, 139)
 rotation = 0.496692
 width = 48.0
 
-[node name="InsidePlatformMoveable2" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform2" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-77, 111)
 rotation = 0.990295
 width = 48.0
 
-[node name="InsidePlatformMoveable3" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform3" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-119, 66)
 rotation = 1.26576
 width = 48.0
 
-[node name="InsidePlatformMoveable10" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform10" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-161, 20)
 rotation = 1.5708
 width = 80.0
 
-[node name="InsidePlatformMoveable11" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform11" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-135, -82)
 rotation = 2.25296
 width = 80.0
 
-[node name="InsidePlatformMoveable12" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform12" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-33, -121)
 rotation = 3.11691
 width = 80.0
 
-[node name="InsidePlatformMoveable13" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform13" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(87, -84)
 rotation = -2.23618
 width = 80.0
 
-[node name="InsidePlatformMoveable14" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform14" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(103, 38)
 rotation = -1.01324
 width = 80.0
 
-[node name="InsidePlatformMoveable4" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform4" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-113, 2)
 rotation = 1.55732
 width = 48.0
 
-[node name="InsidePlatformMoveable5" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform5" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-88, -56)
 rotation = 2.33966
 width = 48.0
 
-[node name="InsidePlatformMoveable6" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform6" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(-28, -83)
 rotation = 3.03038
 width = 32.0
 
-[node name="InsidePlatformMoveable7" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform7" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(26, -78)
 rotation = -2.80129
 width = 32.0
 
-[node name="InsidePlatformMoveable8" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform8" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(70, -22)
 rotation = -1.78695
 width = 64.0
 
-[node name="InsidePlatformMoveable9" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
+[node name="Platform9" parent="RotationCenter" instance=ExtResource("2_jxyt7")]
 position = Vector2(27, 49)
 rotation = -0.352856
 width = 64.0
-
-[node name="CircleCustom" parent="." instance=ExtResource("3_5bmcf")]
 
 [node name="Player" parent="." instance=ExtResource("4_3376f")]
 unique_name_in_owner = true

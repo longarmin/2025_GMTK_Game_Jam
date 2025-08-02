@@ -43,8 +43,8 @@ func _input(event: InputEvent) -> void:
 		rot_spd += 0.1
 
 func change_level() -> void:
-	if current_level == levels.size():
+	if current_level >= levels.size():
 		change_state(GameState.END_MENU)
-	print(current_level)
-	get_tree().change_scene_to_packed(levels[current_level])
-	current_level += 1
+	else:
+		get_tree().change_scene_to_packed(levels[current_level])
+		current_level += 1

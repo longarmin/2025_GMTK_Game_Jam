@@ -17,3 +17,10 @@ func _ready() -> void:
 	controls_exit_button.pressed.connect(func() -> void:
 		controls_container.hide()
 	)
+
+func _unhandled_key_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		if controls_container.visible:
+			controls_container.hide()
+		else:
+			GameManager.change_state(GameManager.GameState.GAME)

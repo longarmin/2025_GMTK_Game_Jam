@@ -1,10 +1,10 @@
 @tool
 
-class_name CircleCustom extends Node2D
+class_name Circle extends Node2D
 
 @export var platform_count: int = 18: set = set_platforms
 
-@onready var platform_scene: PackedScene = preload("res://platform/inside_platform_moveable.tscn")
+@onready var platform_scene: PackedScene = preload("res://platform/platform.tscn")
 
 func _ready() -> void:
 	if platform_scene:

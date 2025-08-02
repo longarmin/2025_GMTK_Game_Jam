@@ -73,10 +73,12 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	direction_x = signf(Input.get_axis("move_left", "move_right"))
-	raycast.target_position = Vector2(0,50)
+	raycast.target_position = Vector2(0, 40)
 	if raycast.is_colliding():
 		var normal = raycast.get_collision_normal()
-		rotation = normal.angle() + PI/2
+		rotation = move_toward(rotation, normal.angle() + PI / 2, 4 * delta)
+	else:
+		rotation = move_toward(rotation, 0.0, 4 * delta)
 	#rotation = (position.y - old_pos_y)
 	#old_pos_y = position.y
 	
@@ -151,7 +153,7 @@ func _physics_process_double_jump(delta: float) -> void:
 		_transition_to_state(State.FALL)
 		
 func _transition_to_state(new_state: State):
-	print("Transitioning from ", State.keys()[current_state], " to ", State.keys()[new_state])
+	# print("Transitioning from ", State.keys()[current_state], " to ", State.keys()[new_state])
 	%Label.text = "State: " + State.keys()[new_state]
 	var previous_state = current_state
 	current_state = new_state

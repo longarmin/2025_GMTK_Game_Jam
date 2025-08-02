@@ -1,11 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c10ucj5wvv6hj"]
+[gd_scene load_steps=4 format=3 uid="uid://by5gho31me582"]
 
 [ext_resource type="Script" uid="uid://d0h41hwes4o1u" path="res://platform/platform.gd" id="1_2q7nh"]
-[ext_resource type="Texture2D" uid="uid://bh82au820d15p" path="res://platform/wheel_ground_platform.png" id="2_2q7nh"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2q7nh"]
-friction = 0.0
-bounce = 1.15
+[ext_resource type="Texture2D" uid="uid://bh82au820d15p" path="res://assets/wheel_ground_platform.png" id="2_2q7nh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_802t3"]
 resource_local_to_scene = true
@@ -14,12 +10,11 @@ size = Vector2(160, 16)
 [node name="Platform" type="AnimatableBody2D"]
 collision_layer = 2
 collision_mask = 0
-physics_material_override = SubResource("PhysicsMaterial_2q7nh")
+sync_to_physics = false
 script = ExtResource("1_2q7nh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(0, 400)
 shape = SubResource("RectangleShape2D_802t3")
 
 [node name="Sprite" type="NinePatchRect" parent="."]
@@ -30,9 +25,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -80.0
-offset_top = 392.0
+offset_top = -8.0
 offset_right = 80.0
-offset_bottom = 408.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_2q7nh")

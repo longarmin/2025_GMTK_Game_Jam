@@ -8,9 +8,9 @@ enum PlatformColor {
 }
 
 const PLATFORM_TEXTURES = {
-	PlatformColor.WHEEL_GROUND: preload("res://platform/wheel_ground_platform.png"),
-	PlatformColor.GROUND: preload("res://platform/ground_platform.png"),
-	PlatformColor.YELLOW: preload("res://platform/yellow_platform.png")
+	PlatformColor.WHEEL_GROUND: preload("res://assets/wheel_ground_platform.png"),
+	PlatformColor.GROUND: preload("res://assets/ground_platform.png"),
+	PlatformColor.YELLOW: preload("res://assets/yellow_platform.png")
 }
 
 ## The width of the platform in pixels. Snaps to 16 pixel increments.
@@ -34,20 +34,8 @@ func _ready() -> void:
 	set_height(height)
 	set_one_way_collision(one_way_collision)
 	set_color(color)
-	#var i = 0
-	#var j = 0
-	#for child in get_children():
-		#if child is CollisionShape2D:
-			#child.rotation_degrees = i * 20
-			#i += 1
-		#elif child is NinePatchRect:
-			#child.rotation_degrees = j * 20
-			#j += 1
-func _physics_process(delta: float) -> void:
-	if Engine.is_editor_hint():
-		return
-	rotation += delta * GameManager.rot_spd
 	
+
 func set_width(value: float) -> void:
 	width = value
 	if shape == null:
@@ -62,7 +50,7 @@ func set_height(value: float) -> void:
 	if shape == null:
 		return
 	shape.size.y = height
-	sprite.position.y = - height / 2.0 + 400
+	sprite.position.y = - height / 2.0
 	sprite.size.y = height
 
 

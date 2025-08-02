@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh82au820d15p"
-path="res://.godot/imported/wheel_ground_platform.png-b4c5c98431fcdbf0d9a735230770c618.ctex"
+uid="uid://dflbw382bkxdy"
+path="res://.godot/imported/yellow_platform.png-e7b3d123ed0ac4b5559f15a62b190b7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://platform/wheel_ground_platform.png"
-dest_files=["res://.godot/imported/wheel_ground_platform.png-b4c5c98431fcdbf0d9a735230770c618.ctex"]
+source_file="res://assets/yellow_platform.png"
+dest_files=["res://.godot/imported/yellow_platform.png-e7b3d123ed0ac4b5559f15a62b190b7b.ctex"]
 
 [params]
 
