@@ -50,6 +50,9 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("speed_down"):
 		rot_spd += 0.1
 
+	if event.is_action_pressed("reload"):
+		get_tree().reload_current_scene()
+
 func change_level() -> void:
 	get_tree().change_scene_to_packed(levels[current_level])
 	current_level += 1

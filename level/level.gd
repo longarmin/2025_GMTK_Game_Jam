@@ -22,3 +22,5 @@ func _input(event: InputEvent) -> void:
 	# Zwecks Debugging und Testing
 	if event.is_action_pressed("level_success"):
 		GameManager.change_state(GameManager.GameState.LEVEL_SUCCESS)
+	if event.is_action_pressed("ui_accept"):
+		animation.advance(5.0)
