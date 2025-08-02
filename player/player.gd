@@ -30,6 +30,7 @@ var current_gravity := 0.0
 
 #state-specific variables:
 var jump_count := 0
+var old_pos_y := position.y
 
 @onready var animated_sprite: AnimatedSprite2D = %AnimatedSprite2D
 @onready var coyote_timer := Timer.new()
@@ -48,6 +49,8 @@ var jump_count := 0
 @onready var double_jump_fall_gravity := calculate_fall_gravity(double_jump_height, double_jump_time_to_descent)
 
 @onready var energy := max_energy: set = set_energy
+@onready var raycast = $RayCast2D
+
 
 func _ready() -> void:
 	#Debug: Slow game down:
@@ -70,6 +73,12 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	direction_x = signf(Input.get_axis("move_left", "move_right"))
+	raycast.target_position = Vector2(0,50)
+	if raycast.is_colliding():
+		var normal = raycast.get_collision_normal()
+		rotation = normal.angle() + PI/2
+	#rotation = (position.y - old_pos_y)
+	#old_pos_y = position.y
 	
 	match current_state:
 		State.GROUND:
