@@ -16,3 +16,9 @@ func _ready() -> void:
 
 func _physics_process(delta):
 	node_rotate.rotate(delta * GameManager.rot_spd)
+
+
+func _input(event: InputEvent) -> void:
+	# Zwecks Debugging und Testing
+	if event.is_action_pressed("level_success"):
+		GameManager.change_state(GameManager.GameState.LEVEL_SUCCESS)

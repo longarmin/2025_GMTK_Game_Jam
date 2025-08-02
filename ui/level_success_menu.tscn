@@ -1,16 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlr0cdrdr1vic"]
+[gd_scene load_steps=3 format=3 uid="uid://c8teidueep8k6"]
 
-[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="1_4ksec"]
-[ext_resource type="Script" uid="uid://bcqg3bsea5qlm" path="res://ui/end_menu.gd" id="1_bje0f"]
+[ext_resource type="Script" uid="uid://ca2ltorg048o3" path="res://ui/level_success_menu.gd" id="1_oyt5a"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="2_also8"]
 
-[node name="EndMenu" type="Control"]
+[node name="LevelSuccessMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_bje0f")
+script = ExtResource("1_oyt5a")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_4ksec")
+theme = ExtResource("2_also8")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -28,27 +28,26 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_4ksec")
+theme = ExtResource("2_also8")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "You have made it!"
+text = "Escaped!"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "You have escaped all prisons. Now you are free to do what you want. Enjoy it!
-
-Thanks for playing this little game."
+text = "Very good! You have escaped this prison.
+But there waits another one...Stay focused!"
 fit_content = true
 
-[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Main Menu"
+text = "Continue"
 
 [node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true

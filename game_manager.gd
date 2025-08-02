@@ -4,6 +4,7 @@ enum GameState {
 	SPLASH_MENU,
 	MAIN_MENU,
 	GAME,
+	LEVEL_SUCCESS,
 	DIED_MENU,
 	END_MENU
 }
@@ -16,6 +17,7 @@ var current_level := 0
 var scenes: Dictionary[GameState, PackedScene] = {
 	GameState.SPLASH_MENU: preload("res://ui/splash_menu.tscn"),
 	GameState.MAIN_MENU: preload("res://ui/main_menu.tscn"),
+	GameState.LEVEL_SUCCESS: preload("res://ui/level_success_menu.tscn"),
 	GameState.DIED_MENU: preload("res://ui/died_menu.tscn"),
 	GameState.END_MENU: preload("res://ui/end_menu.tscn")
 }
@@ -29,11 +31,17 @@ var levels: Array[PackedScene] = [
 
 func change_state(new_state: GameState) -> void:
 	current_state = new_state
-	print(current_state)
+	if current_state == GameState.LEVEL_SUCCESS:
+		if current_level >= levels.size():
+			change_state(GameState.END_MENU)
+			return
 	if current_state == GameState.GAME:
-		change_level()
-	else:
-		get_tree().change_scene_to_packed(scenes[new_state])
+		print("GameState")
+		if current_level <= levels.size():
+			print("Levels")
+			change_level()
+			return
+	get_tree().change_scene_to_packed(scenes[new_state])
 
 func _input(event: InputEvent) -> void:
 	# Zwecks Debugging und Testing
@@ -43,8 +51,5 @@ func _input(event: InputEvent) -> void:
 		rot_spd += 0.1
 
 func change_level() -> void:
-	if current_level >= levels.size():
-		change_state(GameState.END_MENU)
-	else:
-		get_tree().change_scene_to_packed(levels[current_level])
-		current_level += 1
+	get_tree().change_scene_to_packed(levels[current_level])
+	current_level += 1
