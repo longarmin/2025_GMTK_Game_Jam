@@ -50,7 +50,7 @@ var old_pos_y := position.y
 
 @onready var energy := max_energy: set = set_energy
 @onready var raycast = $RayCast2D
-
+@onready var inhibit_motion: bool = false
 @onready var jump_audio: AudioStreamPlayer = %JumpAudio
 @onready var fall_audio: AudioStreamPlayer = %FallAudio
 @onready var death_audio: AudioStreamPlayer = %DeathAudio
@@ -75,6 +75,8 @@ func _ready() -> void:
 
 	
 func _physics_process(delta: float) -> void:
+	if inhibit_motion:
+		return
 	direction_x = signf(Input.get_axis("move_left", "move_right"))
 	raycast.target_position = Vector2(0, 40)
 	if raycast.is_colliding():

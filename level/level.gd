@@ -5,6 +5,7 @@ class_name Level extends Node2D
 @onready var node_rotate: Node2D = %RotationCenter
 @onready var panel: PanelContainer = %PanelContainer
 @onready var start_label: Label = %StartLabel
+@onready var end_label: Label = %EndLabel
 @onready var timer_start: Timer = Timer.new()
 @onready var audio_player: AudioStreamPlayer = AudioStreamPlayer.new()
 @onready var level_theme: AudioStream = preload("res://assets/music/level_theme.wav")
@@ -12,7 +13,9 @@ class_name Level extends Node2D
 var has_timer_started := false
 
 func _ready() -> void:
+	end_label.hide()
 	timer_start.autostart = false
+	timer_start.one_shot = true
 	timer_start.wait_time = 3.0
 	add_child(timer_start)
 	audio_player.stream = level_theme
@@ -29,6 +32,7 @@ func _ready() -> void:
 	timer_start.timeout.connect(func() -> void:
 		panel.hide()
 		disable_all_physics(true)
+		has_timer_started = false
 	)
 
 func _physics_process(delta):
