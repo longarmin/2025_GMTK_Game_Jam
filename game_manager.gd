@@ -10,7 +10,7 @@ enum GameState {
 }
 
 var current_state: GameState
-var rot_spd: float = -0.2
+var rot_spd: float = -0.2: set = change_rot_speed
 var current_level := 0
 var lives := 3: set = change_live
 
@@ -62,3 +62,7 @@ func change_live(new_value) -> void:
 	lives = new_value
 	if lives <= 0:
 		change_state(GameState.DIED_MENU)
+
+func change_rot_speed(new_value) -> void:
+	rot_spd = new_value
+	rot_spd = clampf(rot_spd, -1.0, 1.0)
