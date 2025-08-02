@@ -65,4 +65,4 @@ func change_live(new_value) -> void:
 
 func change_rot_speed(new_value) -> void:
 	rot_spd = new_value
-	rot_spd = clampf(rot_spd, -1.0, 1.0)
+	rot_spd = clampf(rot_spd, -1.0, 6.0)

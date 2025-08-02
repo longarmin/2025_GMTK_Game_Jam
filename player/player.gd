@@ -50,7 +50,7 @@ var old_pos_y := position.y
 
 @onready var energy := max_energy: set = set_energy
 @onready var raycast = $RayCast2D
-
+@onready var inhibit_motion : bool = false
 
 func _ready() -> void:
 	#Debug: Slow game down:
@@ -72,6 +72,8 @@ func _ready() -> void:
 
 	
 func _physics_process(delta: float) -> void:
+	if inhibit_motion:
+		return
 	direction_x = signf(Input.get_axis("move_left", "move_right"))
 	raycast.target_position = Vector2(0, 40)
 	if raycast.is_colliding():
