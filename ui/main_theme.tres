@@ -1,4 +1,19 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://88uk406h7u3k"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://88uk406h7u3k"]
+
+[ext_resource type="FontFile" uid="uid://ck42i2iey3xd0" path="res://assets/ui/Kenney Pixel.ttf" id="1_ot6dq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3xb56"]
+expand_margin_left = 4.0
+expand_margin_top = 2.0
+expand_margin_right = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6tukj"]
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_joxlk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsbh2"]
 bg_color = Color(0, 0, 0, 1)
@@ -7,15 +22,27 @@ bg_color = Color(0, 0, 0, 1)
 bg_color = Color(0.223529, 0.223529, 0.223529, 0.917647)
 
 [resource]
+default_font = ExtResource("1_ot6dq")
 default_font_size = 25
-MarginContainer/constants/margin_bottom = 16
-MarginContainer/constants/margin_left = 16
-MarginContainer/constants/margin_right = 16
-MarginContainer/constants/margin_top = 16
+Button/constants/outline_size = 8
+Button/font_sizes/font_size = 32
+Button/styles/hover = SubResource("StyleBoxFlat_3xb56")
+Button/styles/normal = SubResource("StyleBoxFlat_6tukj")
+Button/styles/pressed = SubResource("StyleBoxFlat_joxlk")
+HBoxContainer/constants/separation = 32
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0.511881, 0.171015, 0.310927, 0)
+Label/constants/outline_size = 8
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_ot6dq")
+MarginContainer/constants/margin_bottom = 32
+MarginContainer/constants/margin_left = 32
+MarginContainer/constants/margin_right = 32
+MarginContainer/constants/margin_top = 32
 Panel/styles/panel = SubResource("StyleBoxFlat_tsbh2")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_g1fjd")
 RichTextLabel/colors/default_color = Color(0.4004, 0.77, 0.64064, 1)
 RichTextLabel/colors/font_outline_color = Color(0.758027, 0.198069, 0.746312, 1)
 RichTextLabel/colors/font_selected_color = Color(0.835294, 0, 0, 0.843137)
-RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/bold_font = ExtResource("1_ot6dq")
 VBoxContainer/constants/separation = 8

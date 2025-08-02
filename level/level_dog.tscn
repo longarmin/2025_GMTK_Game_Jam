@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dlxg80b58vwtr"]
+[gd_scene load_steps=13 format=3 uid="uid://dlxg80b58vwtr"]
 
 [ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_4cdig"]
 [ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="2_4cdig"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://xlya6p4x0rys" path="res://pickup/pickup.tscn" id="6_stp56"]
 [ext_resource type="PackedScene" uid="uid://xjj3eoht8t4r" path="res://platform/rotating_platform.tscn" id="7_5f7h6"]
 [ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="8_5p8bb"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="9_end4s"]
 
 [sub_resource type="Animation" id="Animation_tdwm0"]
 length = 0.001
@@ -38,7 +39,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_qsrdh"]
 resource_name = "intro"
-length = 5.0
+length = 4.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -46,10 +47,10 @@ tracks/0/path = NodePath("Player/Camera2D:zoom")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 4, 5),
-"transitions": PackedFloat32Array(3.73213, 0.999999, 0.999999, 2.92817),
+"times": PackedFloat32Array(0, 3, 4),
+"transitions": PackedFloat32Array(0.999999, 1, 2.92817),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(1, 1)]
+"values": [Vector2(0.55, 0.55), Vector2(0.55, 0.55), Vector2(1, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -58,10 +59,10 @@ tracks/1/path = NodePath("Player/Camera2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 4, 5),
-"transitions": PackedFloat32Array(1, 1, 1, 3.13834),
+"times": PackedFloat32Array(0, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 3.13834),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(-274, -203), Vector2(-274, -203), Vector2(0, 0)]
+"values": [Vector2(-40, -180), Vector2(-40, -180), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tdwm0"]
@@ -194,6 +195,31 @@ color = 1
 [node name="InsidePlatformMoveable8" parent="Platforms/RotationCenter" instance=ExtResource("8_5p8bb")]
 position = Vector2(-56, -21)
 color = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.000711495
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="StartLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("9_end4s")
+text = "Level: Dog"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true

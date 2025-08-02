@@ -35,7 +35,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "You have made it!"
+text = "You made it!"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -45,12 +45,17 @@ text = "You have escaped all prisons. Now you are free to do what you want. Enjo
 Thanks for playing this little game."
 fit_content = true
 
-[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_4ksec")
+alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Main Menu"
 
-[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Exit Game"
