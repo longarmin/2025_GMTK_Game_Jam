@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://3j87k68xo4ug"]
+[gd_scene load_steps=19 format=3 uid="uid://3j87k68xo4ug"]
 
 [ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/lucy/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
@@ -8,13 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://c3i67gf5xtur1" path="res://assets/lucy/idle/crouching.png" id="3_yllr7"]
 [ext_resource type="Texture2D" uid="uid://1w6y4aov8x8i" path="res://assets/lucy/idle/looking_right.png" id="4_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://cxslh8teup70q" path="res://assets/lucy/idle/looking_front.png" id="5_wodsf"]
-[ext_resource type="Texture2D" uid="uid://byi5d5liq08bu" path="res://assets/lucy/run/000.png" id="6_32hag"]
-[ext_resource type="Texture2D" uid="uid://cqhwdqlpfm50e" path="res://assets/lucy/run/001.png" id="7_tqiix"]
 [ext_resource type="Texture2D" uid="uid://2xur0ruvk44k" path="res://assets/lucy/jump.png" id="7_yllr7"]
-[ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/lucy/run/002.png" id="8_e7oew"]
-[ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/lucy/run/003.png" id="9_c35mf"]
-[ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/lucy/run/004.png" id="10_65viv"]
-[ext_resource type="Texture2D" uid="uid://pk8wb3owg84f" path="res://assets/lucy/run/005.png" id="11_x7c3f"]
+[ext_resource type="Texture2D" uid="uid://byi5d5liq08bu" path="res://assets/rat/run/000.png" id="9_wodsf"]
+[ext_resource type="Texture2D" uid="uid://cqhwdqlpfm50e" path="res://assets/rat/run/001.png" id="10_32hag"]
+[ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="11_tqiix"]
+[ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/rat/run/003.png" id="12_e7oew"]
+[ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/rat/run/004.png" id="13_c35mf"]
 [ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="16_32hag"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7qyjy"]
@@ -68,23 +67,20 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_32hag")
+"duration": 0.4,
+"texture": ExtResource("9_wodsf")
 }, {
-"duration": 1.0,
-"texture": ExtResource("7_tqiix")
+"duration": 0.4,
+"texture": ExtResource("10_32hag")
 }, {
-"duration": 1.0,
-"texture": ExtResource("8_e7oew")
+"duration": 0.4,
+"texture": ExtResource("11_tqiix")
 }, {
-"duration": 1.0,
-"texture": ExtResource("9_c35mf")
+"duration": 0.4,
+"texture": ExtResource("12_e7oew")
 }, {
-"duration": 1.0,
-"texture": ExtResource("10_65viv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_x7c3f")
+"duration": 0.4,
+"texture": ExtResource("13_c35mf")
 }],
 "loop": true,
 "name": &"Run",
@@ -109,11 +105,9 @@ script = ExtResource("1_wodsf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_7qyjy")
-animation = &"Idle"
-frame_progress = 0.142575
+animation = &"Run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_wodsf")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
@@ -140,3 +134,6 @@ value = 50.0
 show_percentage = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+collision_mask = 2

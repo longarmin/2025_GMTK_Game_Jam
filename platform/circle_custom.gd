@@ -34,5 +34,5 @@ func set_platforms(new_count: int) -> void:
 			# Use set_deferred to ensure the changes aren't overridden by the physics engine
 			platform.sprite.set_deferred("position", Vector2(-platform.width / 2, platform_count * 25.0 - platform.height / 2.0))
 			platform.collision_shape_2d.set_deferred("position", Vector2(0.0, platform_count * 25.0))
-			platform.set_deferred("rotation_degrees", i * (360 / platform_count))
+			platform.set_deferred("rotation_degrees", i * (360.0 / platform_count))
 			i += 1
