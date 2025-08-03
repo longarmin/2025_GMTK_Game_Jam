@@ -86,110 +86,105 @@ position = Vector2(33, 186)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="Platforms" type="Node2D" parent="."]
-
-[node name="RotationCenter" type="Node2D" parent="Platforms"]
+[node name="RotationCenter" type="Node2D" parent="."]
 unique_name_in_owner = true
 
-[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platforms" type="Node2D" parent="RotationCenter"]
+
+[node name="Platform" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-77, 144)
 rotation = 0.823981
 
-[node name="Platform2" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform2" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-108, 84)
 rotation = 0.823981
 width = 96.0
 
-[node name="Platform3" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform3" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-138, 7)
 rotation = 1.5729
 width = 96.0
 
-[node name="Platform4" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform4" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-120, -26)
 rotation = 1.56905
 width = 96.0
 
-[node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform6" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-37, -91)
 rotation = 2.58883
 width = 64.0
 
-[node name="Platform7" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform7" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(9, -97)
-rotation = 3.45254
+rotation = -2.83065
 width = 48.0
 
-[node name="Platform8" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform8" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(51, -70)
-rotation = 3.56025
+rotation = -2.72294
 width = 48.0
 
-[node name="Platform9" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform9" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(68, -28)
-rotation = 4.69758
+rotation = -1.58561
 width = 64.0
 
-[node name="Platform10" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform10" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(50, 31)
-rotation = 4.99093
+rotation = -1.29226
 width = 64.0
 
-[node name="Platform11" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform11" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(7, 51)
-rotation = 5.67006
+rotation = -0.613125
 width = 64.0
 
-[node name="Platform12" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform12" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-74, 14)
-rotation = 4.7048
+rotation = -1.57839
 width = 96.0
 
-[node name="Platform14" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform14" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-10, -55)
 width = 32.0
 
-[node name="Platform13" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform13" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-42, 49)
-rotation = 4.08919
+rotation = -2.194
 width = 32.0
 
-[node name="Platform5" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+[node name="Platform5" parent="RotationCenter/Platforms" instance=ExtResource("5_5m14w")]
 position = Vector2(-93, -83)
 rotation = 2.56616
 width = 64.0
 
-[node name="Joints" type="Node2D" parent="Platforms/RotationCenter"]
+[node name="Joints" type="Node2D" parent="RotationCenter"]
 unique_name_in_owner = true
 
-[node name="Joint2" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+[node name="Joint2" type="Sprite2D" parent="RotationCenter/Joints"]
 position = Vector2(-139, 51)
 rotation = -0.175618
-scale = Vector2(1, 1)
 texture = ExtResource("6_qy7rs")
 
-[node name="Joint3" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+[node name="Joint3" type="Sprite2D" parent="RotationCenter/Joints"]
 position = Vector2(-24, 200)
 rotation = 0.0106164
-scale = Vector2(1, 1)
 texture = ExtResource("6_qy7rs")
 
-[node name="Joint4" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+[node name="Joint4" type="Sprite2D" parent="RotationCenter/Joints"]
 position = Vector2(-120, -70)
 rotation = 0.314933
-scale = Vector2(1, 1)
 texture = ExtResource("6_qy7rs")
 
-[node name="Joint5" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+[node name="Joint5" type="Sprite2D" parent="RotationCenter/Joints"]
 position = Vector2(-11, -105)
 rotation = 0.0059658
-scale = Vector2(1, 1)
 texture = ExtResource("6_qy7rs")
 
-[node name="Joint6" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+[node name="Joint6" type="Sprite2D" parent="RotationCenter/Joints"]
 position = Vector2(67, -64)
 rotation = -0.0630117
-scale = Vector2(1, 1)
 texture = ExtResource("6_qy7rs")
 
 [node name="Escape" parent="." instance=ExtResource("6_qg0cr")]
