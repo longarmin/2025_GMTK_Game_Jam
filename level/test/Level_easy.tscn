@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://c16va0genib81"]
 
-[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_3a3mv"]
-[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="2_yextx"]
-[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_tp542"]
-[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="4_l7m3j"]
-[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="5_td75g"]
-[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="6_yextx"]
+[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_pyj5a"]
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="2_klh0g"]
+[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="3_6et60"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="4_248d8"]
+[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="5_8e306"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="6_v6ipw"]
 
 [sub_resource type="Animation" id="Animation_tdwm0"]
 length = 0.001
@@ -69,14 +69,14 @@ _data = {
 }
 
 [node name="LevelTestSimple2" type="Node2D"]
-script = ExtResource("1_3a3mv")
+script = ExtResource("1_pyj5a")
 
-[node name="Circle" parent="." instance=ExtResource("2_yextx")]
+[node name="Circle" parent="." instance=ExtResource("2_klh0g")]
 platform_count = 8
 
-[node name="Player" parent="." instance=ExtResource("3_tp542")]
+[node name="Player" parent="." instance=ExtResource("3_6et60")]
 unique_name_in_owner = true
-position = Vector2(-1, -21)
+position = Vector2(53, 186)
 rotation = 0.0202066
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -92,81 +92,81 @@ libraries = {
 [node name="RotationCenter" type="Node2D" parent="."]
 unique_name_in_owner = true
 
-[node name="Platform" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-54, 165)
 width = 64.0
 
-[node name="Platform3" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform3" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(1.99999, 182)
 rotation = 0.615576
 width = 64.0
 
-[node name="Platform2" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform2" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-113, 133)
 rotation = 0.785398
 width = 96.0
 
-[node name="Platform4" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform4" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-153, 76)
 rotation = 0.785398
 width = 64.0
 
-[node name="Platform13" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform13" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-101, 78)
 rotation = 0.785398
 width = 64.0
 
-[node name="Platform14" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform14" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-48, 96)
 rotation = 0.785398
 width = 64.0
 
-[node name="Platform15" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform15" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-65, 29)
 rotation = 0.785398
 width = 64.0
 
-[node name="Platform5" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform5" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-166, 27)
 rotation = 1.57227
 width = 64.0
 
-[node name="Platform10" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform10" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-100, -126)
 rotation = 2.35698
 width = 80.0
 
-[node name="Platform6" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform6" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-146, -15)
 rotation = 1.57227
 width = 64.0
 
-[node name="Platform7" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform7" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-124, -71)
 rotation = 2.30392
 width = 64.0
 
-[node name="Platform8" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform8" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-73, -69)
 rotation = 2.30392
 width = 64.0
 
-[node name="Platform9" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform9" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-15, -41)
 rotation = 3.14031
 width = 64.0
 
-[node name="Platform12" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform12" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(46, -42)
 rotation = 4.47862
 width = 64.0
 
-[node name="Platform11" parent="RotationCenter" instance=ExtResource("4_l7m3j")]
+[node name="Platform11" parent="RotationCenter" instance=ExtResource("4_248d8")]
 position = Vector2(-27, -118)
 rotation = 3.94468
 width = 128.0
 
-[node name="Escape" parent="." instance=ExtResource("5_td75g")]
+[node name="Escape" parent="." instance=ExtResource("5_8e306")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -190,8 +190,8 @@ size_flags_vertical = 3
 [node name="StartLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/CenterContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("6_yextx")
-text = "Level 1: Easymode"
+theme = ExtResource("6_v6ipw")
+text = "Level: Easymode"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
 layout_mode = 2
@@ -200,6 +200,6 @@ alignment = 2
 [node name="EndLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("6_yextx")
+theme = ExtResource("6_v6ipw")
 text = "bla"
 horizontal_alignment = 1

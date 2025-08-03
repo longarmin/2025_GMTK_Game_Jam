@@ -1,5 +1,5 @@
 class_name Escape extends Area2D
-@onready var level_complete:bool = false
+@onready var level_complete: bool = false
 var escape_successful_splasher = preload("res://assets/ui/Letters/letter_escape_success.tscn")
 @onready var timer_end: Timer = Timer.new()
 
@@ -26,8 +26,8 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if level_complete:
-		var pos:Vector2=get_parent().start_label.get_position()
-		get_parent().start_label.set_position(Vector2(pos.x, get_viewport().get_visible_rect().size.y*0.8),0)
+		var pos: Vector2 = get_parent().start_label.get_position()
+		get_parent().start_label.set_position(Vector2(pos.x, get_viewport().get_visible_rect().size.y * 0.8), 0)
 
 func _physics_process(delta: float) -> void:
 	if level_complete:
