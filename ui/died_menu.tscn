@@ -46,12 +46,16 @@ Try to collect the cheeses next time!
 Thanks for playing this little game."
 fit_content = true
 
-[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Main Menu"
 
-[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Exit Game"
