@@ -5,6 +5,7 @@ class_name Circle extends Node2D
 @export var platform_count: int = 18: set = set_platforms
 
 @onready var platform_scene: PackedScene = preload("res://platform/platform.tscn")
+@onready var joint_texture: Texture2D = preload("res://assets/joint.png")
 
 func _ready() -> void:
 	if platform_scene:
@@ -22,7 +23,12 @@ func set_platforms(new_count: int) -> void:
 	if platform_scene:
 		for count in range(platform_count):
 			var platform: Platform = platform_scene.instantiate()
+			var joint_sprite: Sprite2D = Sprite2D.new()
+			joint_sprite.texture = joint_texture
 			add_child(platform)
+			platform.add_child(joint_sprite)
+			joint_sprite.position.x += platform.width / 2
+			joint_sprite.z_index += 1
 			var rotation_angle := count * (2 * PI / platform_count)
 			var angle_to_border := Vector2.from_angle(rotation_angle)
 			platform.position = Vector2(angle_to_border * 25.0 * platform_count)

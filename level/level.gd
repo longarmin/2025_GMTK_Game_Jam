@@ -2,7 +2,7 @@ class_name Level extends Node2D
 
 @onready var player: Player = %Player
 @onready var animation: AnimationPlayer = %AnimationPlayer
-@onready var node_rotate: Node2D = %RotationCenter
+@onready var rotation_center: Node2D = %RotationCenter
 @onready var panel: PanelContainer = %PanelContainer
 @onready var start_label: Label = %StartLabel
 @onready var end_label: Label = %EndLabel
@@ -39,7 +39,7 @@ func _ready() -> void:
 	)
 
 func _physics_process(delta):
-	node_rotate.rotate(delta * GameManager.rot_spd)
+	rotation_center.rotate(delta * GameManager.rot_spd)
 
 func _process(_delta: float) -> void:
 	if has_timer_started:
