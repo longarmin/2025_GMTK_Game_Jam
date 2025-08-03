@@ -6,7 +6,6 @@ class_name RotatingPlatform extends Platform
 
 func _ready() -> void:
 	super ()
-	set_color(PlatformColor.GROUND)
 	set_y_pos(y_komponente)
 	set_rot(start_rotation)
 	#sprite.texture = PLATFORM_TEXTURES[PlatformColor.GROUND]
