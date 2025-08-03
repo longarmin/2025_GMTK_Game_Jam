@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://8veo64s7ijs2" path="res://assets/worlds/ground_slopes_tileset.png" id="9_v7pi8"]
 [ext_resource type="Texture2D" uid="uid://d1kl0vvvfvfpt" path="res://background/laboratory/laboratory.png" id="11_gxljl"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txc2e"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6735"]
 resource_name = "Ground"
 texture = ExtResource("1_cdpnt")
 0:0/0 = 0
@@ -392,7 +392,7 @@ texture = ExtResource("1_cdpnt")
 11:3/0/terrains_peering_bit/top_left_corner = 0
 11:3/0/terrains_peering_bit/top_side = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hn7a7"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fun8n"]
 resource_name = "Ivy"
 texture = ExtResource("2_8u6ia")
 0:0/0 = 0
@@ -507,7 +507,7 @@ texture = ExtResource("2_8u6ia")
 0:3/0/terrains_peering_bit/top_side = 1
 0:3/0/terrains_peering_bit/top_right_corner = 1
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iu8wt"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i1t5b"]
 resource_name = "UnderGround"
 texture = ExtResource("3_6i7po")
 0:0/0 = 0
@@ -720,7 +720,7 @@ texture = ExtResource("3_6i7po")
 7:2/0/terrains_peering_bit/top_side = 2
 7:2/0/terrains_peering_bit/top_right_corner = 2
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y15xx"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2a1yf"]
 resource_name = "BigMushrooms"
 texture = ExtResource("4_e8087")
 0:0/0 = 0
@@ -760,7 +760,7 @@ texture = ExtResource("4_e8087")
 5:3/0 = 0
 6:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_76m4d"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nnuhd"]
 resource_name = "ForegroundBush"
 texture = ExtResource("5_b3bg0")
 3:0/0 = 0
@@ -871,7 +871,7 @@ texture = ExtResource("5_b3bg0")
 0:2/0/terrains_peering_bit/top_side = 3
 0:2/0/terrains_peering_bit/top_right_corner = 3
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p48oi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oila3"]
 resource_name = "Mountains Background"
 texture = ExtResource("6_8umsc")
 0:0/0 = 0
@@ -882,7 +882,7 @@ texture = ExtResource("6_8umsc")
 5:0/0 = 0
 6:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wqnir"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nn5jh"]
 resource_name = "Ground Objects"
 texture = ExtResource("7_7kmkt")
 0:0/0 = 0
@@ -893,7 +893,7 @@ texture = ExtResource("7_7kmkt")
 0:2/0 = 0
 2:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6735"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5brtl"]
 texture = ExtResource("8_eur5r")
 0:0/0 = 0
 1:0/0 = 0
@@ -1361,7 +1361,7 @@ texture = ExtResource("8_eur5r")
 29:14/0 = 0
 30:14/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_au8fi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3mpat"]
 resource_name = "Mushrooms Background"
 texture = ExtResource("8_livpj")
 0:0/0 = 0
@@ -1390,7 +1390,7 @@ texture = ExtResource("8_livpj")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ty6ap"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yj354"]
 texture = ExtResource("9_v7pi8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -1425,18 +1425,18 @@ terrain_set_0/terrain_2/name = "Underground"
 terrain_set_0/terrain_2/color = Color(0.55515, 0.274067, 0.20493, 1)
 terrain_set_0/terrain_3/name = "ForegroundBush"
 terrain_set_0/terrain_3/color = Color(0.482038, 0.372117, 0.750194, 1)
-sources/0 = SubResource("TileSetAtlasSource_txc2e")
-sources/1 = SubResource("TileSetAtlasSource_hn7a7")
-sources/2 = SubResource("TileSetAtlasSource_iu8wt")
-sources/3 = SubResource("TileSetAtlasSource_y15xx")
-sources/4 = SubResource("TileSetAtlasSource_76m4d")
-sources/5 = SubResource("TileSetAtlasSource_p48oi")
-sources/6 = SubResource("TileSetAtlasSource_wqnir")
-sources/8 = SubResource("TileSetAtlasSource_au8fi")
-sources/9 = SubResource("TileSetAtlasSource_ty6ap")
-sources/7 = SubResource("TileSetAtlasSource_y6735")
+sources/0 = SubResource("TileSetAtlasSource_y6735")
+sources/1 = SubResource("TileSetAtlasSource_fun8n")
+sources/2 = SubResource("TileSetAtlasSource_i1t5b")
+sources/3 = SubResource("TileSetAtlasSource_2a1yf")
+sources/4 = SubResource("TileSetAtlasSource_nnuhd")
+sources/5 = SubResource("TileSetAtlasSource_oila3")
+sources/6 = SubResource("TileSetAtlasSource_nn5jh")
+sources/8 = SubResource("TileSetAtlasSource_3mpat")
+sources/9 = SubResource("TileSetAtlasSource_yj354")
+sources/7 = SubResource("TileSetAtlasSource_5brtl")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eur5r"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gxljl"]
 texture = ExtResource("11_gxljl")
 1:1/0 = 0
 0:0/0 = 0
@@ -1457,14 +1457,14 @@ texture = ExtResource("11_gxljl")
 19:3/size_in_atlas = Vector2i(16, 20)
 19:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fun8n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eur5r"]
 texture = ExtResource("8_eur5r")
 0:15/size_in_atlas = Vector2i(31, 6)
 0:15/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_fun8n"]
-sources/0 = SubResource("TileSetAtlasSource_eur5r")
-sources/3 = SubResource("TileSetAtlasSource_fun8n")
+sources/0 = SubResource("TileSetAtlasSource_gxljl")
+sources/3 = SubResource("TileSetAtlasSource_eur5r")
 
 [node name="Background" type="Node2D"]
 
