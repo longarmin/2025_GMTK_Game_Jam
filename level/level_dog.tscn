@@ -82,7 +82,7 @@ platform_count = 16
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("4_7yldw")]
 unique_name_in_owner = true
-position = Vector2(25, 134)
+position = Vector2(155, 353)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 

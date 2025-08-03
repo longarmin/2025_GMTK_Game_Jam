@@ -15,8 +15,9 @@ var rot_spd: float = -0.2: set = change_rot_speed
 var current_level := 0
 var lives := 3: set = change_live
 var levels: Array[PackedScene] = [
-	preload("res://level/game/level_tutorial_01.tscn"),
-	preload("res://level/game/level_tutorial_02.tscn"),
+	preload("res://level/level_tutorial_01.tscn"),
+	preload("res://level/level_tutorial_02.tscn"),
+	preload("res://level/level_dog.tscn")
 ]
 
 var scenes: Dictionary[GameState, PackedScene] = {
