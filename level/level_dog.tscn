@@ -100,70 +100,60 @@ position = Vector2(-78, -9)
 rotation = -0.06
 y_komponente = 350.0
 start_rotation = -0.06
-color = 4
 
 [node name="InsidePlatform2" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 0.8
 y_komponente = 305.0
 start_rotation = 0.8
 width = 96.0
-color = 4
 
 [node name="InsidePlatform3" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 1.24
 y_komponente = 305.0
 start_rotation = 1.24
 width = 96.0
-color = 4
 
 [node name="InsidePlatform4" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 3.0
 y_komponente = 225.0
 start_rotation = 3.0
 width = 96.0
-color = 4
 
 [node name="InsidePlatform5" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 3.53
 y_komponente = 212.0
 start_rotation = 3.53
 width = 80.0
-color = 4
 
 [node name="InsidePlatform6" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 4.25
 y_komponente = 189.0
 start_rotation = 4.25
 width = 96.0
-color = 4
 
 [node name="InsidePlatform7" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 4.81
 y_komponente = 269.0
 start_rotation = 4.81
 width = 48.0
-color = 4
 
 [node name="InsidePlatform8" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 0.4
 y_komponente = 138.0
 start_rotation = 0.4
 width = 48.0
-color = 4
 
 [node name="InsidePlatform9" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 0.91
 y_komponente = 138.0
 start_rotation = 0.91
 width = 48.0
-color = 4
 
 [node name="InsidePlatform10" parent="Platforms" instance=ExtResource("7_5f7h6")]
 rotation = 1.47
 y_komponente = 130.0
 start_rotation = 1.47
 width = 48.0
-color = 4
 
 [node name="RotationCenter" type="Node2D" parent="Platforms"]
 unique_name_in_owner = true
@@ -223,7 +213,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("9_end4s")
-text = "Level: Beginning"
+text = "Level: Escape"
 
 [node name="LevelEndPanel" type="MarginContainer" parent="CanvasLayer"]
 anchors_preset = 15
@@ -250,7 +240,7 @@ horizontal_alignment = 1
 
 [node name="Hud" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("10_b7v6d")]
 unique_name_in_owner = true
-player = NodePath("")
+player = NodePath("../../Player")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true

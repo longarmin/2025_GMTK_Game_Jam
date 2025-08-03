@@ -214,7 +214,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("7_lxf5s")
-text = "Level: Beginning"
+text = "Level: First Jumps"
 
 [node name="LevelEndPanel" type="MarginContainer" parent="CanvasLayer"]
 anchors_preset = 15
@@ -241,7 +241,7 @@ horizontal_alignment = 1
 
 [node name="Hud" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("9_enbde")]
 unique_name_in_owner = true
-player = NodePath("")
+player = NodePath("../../Player")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true

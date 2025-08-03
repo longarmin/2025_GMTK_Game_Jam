@@ -40,6 +40,7 @@ func _ready() -> void:
 		disable_all_physics(true)
 		has_timer_started = false
 		player.energy_timer.start()
+		print("Hallo")
 		hud.show()
 	)
 
