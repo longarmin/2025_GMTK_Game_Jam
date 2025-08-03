@@ -40,9 +40,9 @@ text = "You made it!"
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "You have escaped all prisons. Now you are free to do what you want. Enjoy it!
+text = "You broke free from the endless cycle of the rat race. You chose peace over pace, purpose over pressure. Now you're living instead of just surviving - Enjoy it!
 
-Thanks for playing this little game."
+Thank you for playing this little game."
 fit_content = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]

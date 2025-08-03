@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://btktvntxtuyxm"]
+[gd_scene load_steps=46 format=4 uid="uid://btktvntxtuyxm"]
 
 [ext_resource type="Script" uid="uid://bawag4o6gr4eu" path="res://ui/main_menu.gd" id="1_0dkrt"]
 [ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="1_t7e0r"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="24_nohsj"]
 [ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/rat/run/003.png" id="25_7mcg4"]
 [ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/rat/run/004.png" id="26_10sdn"]
+[ext_resource type="PackedScene" uid="uid://bi1nmdd4n2yw2" path="res://assets/ui/Letters/RatRaceLetters/letter_rat_race.tscn" id="27_dbfs1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s1050"]
 resource_name = "Ground"
@@ -1607,6 +1608,9 @@ animation = &"Run"
 autoplay = "Run"
 frame_progress = 0.558177
 
+[node name="letter_escape_success" parent="." instance=ExtResource("27_dbfs1")]
+position = Vector2(131, 69)
+
 [node name="Panel" type="Panel" parent="."]
 visible = false
 layout_mode = 1
@@ -1630,8 +1634,10 @@ theme = ExtResource("1_t7e0r")
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 theme = ExtResource("1_t7e0r")
+alignment = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 2
