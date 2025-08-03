@@ -1,13 +1,13 @@
-[gd_scene load_steps=24 format=3 uid="uid://cg0d0xh0khf32"]
+[gd_scene load_steps=21 format=3 uid="uid://bi1nmdd4n2yw2"]
 
-[ext_resource type="Shader" uid="uid://qi8ld8ftfjaa" path="res://ui/lettershader.gdshader" id="1_wp3jg"]
-[ext_resource type="Script" uid="uid://calfcby57tdcl" path="res://assets/ui/Letters/letter_escape_success.gd" id="2_37u4s"]
-[ext_resource type="Script" uid="uid://dgc0h0uu1mwox" path="res://assets/ui/Letters/Node2D_letter_escape_success.gd" id="2_qoiyo"]
-[ext_resource type="Script" uid="uid://dfwk85s4yvr5j" path="res://assets/ui/Letters/sprite_2d.gd" id="3_wp3jg"]
-[ext_resource type="Texture2D" uid="uid://h71c882ptfwb" path="res://assets/ui/font_rat_race.png" id="4_qoiyo"]
+[ext_resource type="Shader" uid="uid://qi8ld8ftfjaa" path="res://ui/lettershader.gdshader" id="1_kbrfl"]
+[ext_resource type="Script" uid="uid://calfcby57tdcl" path="res://assets/ui/Letters/letter_escape_success.gd" id="2_0cix4"]
+[ext_resource type="Script" uid="uid://dgc0h0uu1mwox" path="res://assets/ui/Letters/Node2D_letter_escape_success.gd" id="3_2qnxk"]
+[ext_resource type="Texture2D" uid="uid://h71c882ptfwb" path="res://assets/ui/font_rat_race.png" id="4_tdgdu"]
+[ext_resource type="Script" uid="uid://dfwk85s4yvr5j" path="res://assets/ui/Letters/sprite_2d.gd" id="5_0ivyi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ug8j6"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -15,7 +15,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qoiyo"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -23,7 +23,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_37u4s"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -31,7 +31,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_og8ba"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -39,7 +39,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xpkem"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -47,7 +47,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yfaj3"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -55,7 +55,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tl8r2"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -63,7 +63,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wd2l5"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -71,7 +71,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1hv27"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -79,7 +79,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qgcgi"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -87,7 +87,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2jbfu"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -95,7 +95,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nw1ex"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -103,7 +103,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lxxxi"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -111,31 +111,7 @@ shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
 shader_parameter/texture_region = Vector4(0, 0, 0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_75mtc"]
-shader = ExtResource("1_wp3jg")
-shader_parameter/inner_outline_width = 1.0
-shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
-shader_parameter/outer_outline_width = 3.0
-shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
-shader_parameter/texture_region = Vector4(0, 0, 0, 0)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_whakf"]
-shader = ExtResource("1_wp3jg")
-shader_parameter/inner_outline_width = 1.0
-shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
-shader_parameter/outer_outline_width = 3.0
-shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
-shader_parameter/texture_region = Vector4(0, 0, 0, 0)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_l7kme"]
-shader = ExtResource("1_wp3jg")
-shader_parameter/inner_outline_width = 1.0
-shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
-shader_parameter/outer_outline_width = 3.0
-shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
-shader_parameter/texture_region = Vector4(0, 0, 0, 0)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_e7gcc"]
-shader = ExtResource("1_wp3jg")
+shader = ExtResource("1_kbrfl")
 shader_parameter/inner_outline_width = 1.0
 shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
 shader_parameter/outer_outline_width = 3.0
@@ -150,208 +126,168 @@ animations = [{
 "speed": 25.0
 }]
 
-[node name="letter_escape_success" type="Node2D"]
+[node name="letter_rat_race_escape" type="Node2D"]
 material = SubResource("ShaderMaterial_ug8j6")
 position = Vector2(-154.688, -2.19742)
-script = ExtResource("2_37u4s")
+script = ExtResource("2_0cix4")
 metadata/movie_file = &"res://assets/ui/Letters/Letter_Animation/success.png"
-
-[node name="Camera2D" type="Camera2D" parent="."]
-visible = false
-position = Vector2(158.688, 3.19742)
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(154.688, 2.19742)
-script = ExtResource("2_qoiyo")
+script = ExtResource("3_2qnxk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_qoiyo")
-position = Vector2(-58.6878, -23.1974)
+position = Vector2(-60.5588, 20.5898)
 rotation = -0.145662
 scale = Vector2(0.632804, 0.594426)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 1
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_37u4s")
-position = Vector2(-39.6878, -23.1974)
+position = Vector2(-41.5588, 20.5898)
 rotation = 0.293845
 scale = Vector2(0.594047, 0.605865)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 1
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 2
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_og8ba")
-position = Vector2(-16.6878, -21.1974)
+position = Vector2(-18.5587, 22.5898)
 rotation = 0.0851756
 scale = Vector2(0.522136, 0.593525)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 2
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 3
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_xpkem")
-position = Vector2(11.3122, -22.1974)
+position = Vector2(9.44125, 21.5898)
 rotation = 0.0076467
 scale = Vector2(0.908498, 0.81691)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 3
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D5" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_yfaj3")
-position = Vector2(39.3122, -23.1974)
+position = Vector2(37.4412, 20.5898)
 rotation = -0.0597086
 scale = Vector2(0.645898, 0.556304)
-texture = ExtResource("4_qoiyo")
-hframes = 8
+texture = ExtResource("4_tdgdu")
+hframes = 10
 frame = 4
-script = ExtResource("3_wp3jg")
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D6" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_tl8r2")
-position = Vector2(62.3122, -22.1974)
+position = Vector2(60.4412, 21.5898)
 rotation = -0.302095
 scale = Vector2(0.615767, 0.631956)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 1
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D7" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_wd2l5")
-position = Vector2(-97.9999, 18.5001)
+position = Vector2(-68.5475, -15.801)
 rotation = -0.116998
 scale = Vector2(0.529495, 0.539188)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 1
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 8
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D8" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_1hv27")
-position = Vector2(-75.9999, 18.5001)
+position = Vector2(-46.5475, -15.801)
 rotation = 0.0352973
 scale = Vector2(0.769093, 0.735423)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 5
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D9" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_qgcgi")
-position = Vector2(-52.9999, 18.5001)
+position = Vector2(-23.5475, -15.801)
 rotation = 0.0883082
 scale = Vector2(0.507778, 0.602223)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 2
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 9
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D10" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_2jbfu")
-position = Vector2(-29.9999, 18.5001)
+position = Vector2(6.91918, -14.801)
 rotation = 0.202553
 scale = Vector2(0.68232, 0.670394)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 2
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 8
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D11" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_nw1ex")
-position = Vector2(-6.99989, 18.5001)
+position = Vector2(29.9192, -14.801)
 rotation = 0.0334379
 scale = Vector2(0.819046, 0.834457)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D12" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_lxxxi")
-position = Vector2(17.0001, 18.5001)
+position = Vector2(53.9192, -14.801)
 rotation = -0.0567036
 scale = Vector2(0.675477, 0.677964)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 1
-script = ExtResource("3_wp3jg")
+texture = ExtResource("4_tdgdu")
+hframes = 10
+frame = 3
+script = ExtResource("5_0ivyi")
 
 [node name="Sprite2D13" type="Sprite2D" parent="Node2D"]
 modulate = Color(0.655824, 0.236166, 0.391239, 1)
 self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
 material = SubResource("ShaderMaterial_75mtc")
-position = Vector2(40.0001, 18.5001)
+position = Vector2(76.9192, -14.801)
 rotation = 0.0492019
 scale = Vector2(0.767267, 0.75957)
-texture = ExtResource("4_qoiyo")
-hframes = 8
+texture = ExtResource("4_tdgdu")
+hframes = 10
 frame = 1
-script = ExtResource("3_wp3jg")
-
-[node name="Sprite2D14" type="Sprite2D" parent="Node2D"]
-modulate = Color(0.655824, 0.236166, 0.391239, 1)
-self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
-material = SubResource("ShaderMaterial_whakf")
-position = Vector2(64.0001, 19.5001)
-rotation = -0.000441387
-scale = Vector2(0.64201, 0.647968)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 7
-script = ExtResource("3_wp3jg")
-
-[node name="Sprite2D15" type="Sprite2D" parent="Node2D"]
-modulate = Color(0.655824, 0.236166, 0.391239, 1)
-self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
-material = SubResource("ShaderMaterial_l7kme")
-position = Vector2(84.0001, 19.5001)
-rotation = -0.0993521
-scale = Vector2(0.618465, 0.573351)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 5
-script = ExtResource("3_wp3jg")
-
-[node name="Sprite2D16" type="Sprite2D" parent="Node2D"]
-modulate = Color(0.655824, 0.236166, 0.391239, 1)
-self_modulate = Color(0.503024, 0.330552, 0.469087, 1)
-material = SubResource("ShaderMaterial_e7gcc")
-position = Vector2(111, 19.5001)
-rotation = -0.00442517
-scale = Vector2(0.778991, 0.828784)
-texture = ExtResource("4_qoiyo")
-hframes = 8
-frame = 6
-script = ExtResource("3_wp3jg")
+script = ExtResource("5_0ivyi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m1vas")
