@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bg78nxk4mujtv"]
+[gd_scene load_steps=13 format=3 uid="uid://bg78nxk4mujtv"]
 
 [ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_fh0tj"]
 [ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="2_fa4o5"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="5_0q3nd"]
 [ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="6_e6xqc"]
 [ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="7_8to1t"]
+[ext_resource type="PackedScene" uid="uid://c4sq60567qc3n" path="res://ui/hud.tscn" id="9_k03si"]
 
 [sub_resource type="Animation" id="Animation_tdwm0"]
 length = 0.001
@@ -119,8 +120,7 @@ width = 96.0
 color = 3
 
 [node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("5_0q3nd")]
-position = Vector2(-14, 18)
-rotation = 6.56626
+position = Vector2(-16, 30)
 width = 96.0
 color = 3
 
@@ -192,6 +192,9 @@ layout_mode = 2
 theme = ExtResource("7_8to1t")
 text = "bla"
 horizontal_alignment = 1
+
+[node name="Hud" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("9_k03si")]
+player = NodePath("../../Player")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true

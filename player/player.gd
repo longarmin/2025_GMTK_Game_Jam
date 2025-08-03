@@ -4,6 +4,8 @@ const MAX_JUMPS := 2
 
 enum State {GROUND, JUMP, FALL, DOUBLE_JUMP}
 
+signal energy_changed(energy: float)
+
 @export var acceleration := 700
 @export var air_acceleration := 400.0
 @export var deceleration := 1400
@@ -37,7 +39,6 @@ var old_pos_y := position.y
 @onready var jump_input_buffer_timer := Timer.new()
 @onready var energy_timer := Timer.new()
 @onready var dust: GPUParticles2D = %Dust
-@onready var energy_bar: ProgressBar = %EnergyBar
 
 @onready var jump_speed = calculate_jump_speed(jump_height, jump_time_to_peak)
 @onready var jump_gravity := calculate_jump_gravity(jump_height, jump_time_to_peak)
@@ -234,14 +235,7 @@ func play_tween_touch_ground() -> void:
 func set_energy(new_energy: float) -> void:
 	energy = new_energy
 	energy = clampf(energy, 0.0, 100.0)
-	energy_bar.value = energy
-
-	if energy > 70.0:
-		energy_bar.modulate = Color(0.0, 1.0, 0.0) # Green
-	elif energy > 30.0:
-		energy_bar.modulate = Color(1.0, 1.0, 0.0) # Yellow
-	else:
-		energy_bar.modulate = Color(1.0, 0.0, 0.0) # Red
+	emit_signal("energy_changed", energy)
 	
 	if energy == 0.0:
 		death_audio.play()

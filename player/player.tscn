@@ -1,9 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://3j87k68xo4ug"]
+[gd_scene load_steps=19 format=3 uid="uid://3j87k68xo4ug"]
 
 [ext_resource type="Texture2D" uid="uid://d07un6ita4esd" path="res://assets/rat/idle/idle.png" id="1_2ieo8"]
 [ext_resource type="Script" uid="uid://bkq3rs5ukhsbv" path="res://player/player.gd" id="1_wodsf"]
 [ext_resource type="Texture2D" uid="uid://bb43c0s5ktt4e" path="res://assets/rat/fall.png" id="2_kb6p2"]
-[ext_resource type="Texture2D" uid="uid://vcwnftmgqlr4" path="res://assets/rat/dust_particle.png" id="2_wodsf"]
 [ext_resource type="Texture2D" uid="uid://c3i67gf5xtur1" path="res://assets/rat/idle/crouching.png" id="3_yllr7"]
 [ext_resource type="Texture2D" uid="uid://1w6y4aov8x8i" path="res://assets/rat/idle/looking_right.png" id="4_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://2xur0ruvk44k" path="res://assets/rat/jump.png" id="7_yllr7"]
@@ -14,7 +13,6 @@
 [ext_resource type="AudioStream" uid="uid://cv4vhtmru1i17" path="res://assets/sounds/jump.wav" id="13_yllr7"]
 [ext_resource type="AudioStream" uid="uid://dmk0iu7431ogu" path="res://assets/sounds/fall.wav" id="14_kb6p2"]
 [ext_resource type="AudioStream" uid="uid://dleekyny777c" path="res://assets/sounds/death.wav" id="15_wodsf"]
-[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="16_32hag"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7qyjy"]
 animations = [{
@@ -73,8 +71,15 @@ animations = [{
 size = Vector2(14, 8)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kb6p2"]
+lifetime_randomness = 1.0
 particle_flag_disable_z = true
-gravity = Vector3(0, -8, 0)
+direction = Vector3(1, -1, 0)
+spread = 10.0
+initial_velocity_max = 100.0
+linear_accel_min = -2.23517e-06
+linear_accel_max = 10.71
+radial_accel_min = -2.23517e-06
+radial_accel_max = 2.98
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kb6p2"]
 random_pitch = 2.0
@@ -109,24 +114,14 @@ shape = SubResource("RectangleShape2D_wodsf")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(-6, 5)
+position = Vector2(4, 5)
 emitting = false
-texture = ExtResource("2_wodsf")
+amount = 4
 process_material = SubResource("ParticleProcessMaterial_kb6p2")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, 20)
 collision_mask = 2
-
-[node name="EnergyBar" type="ProgressBar" parent="."]
-unique_name_in_owner = true
-offset_left = -14.0
-offset_top = -15.0
-offset_right = 14.0
-offset_bottom = -11.0
-theme = ExtResource("16_32hag")
-value = 50.0
-show_percentage = false
 
 [node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
