@@ -1,0 +1,672 @@
+[gd_scene load_steps=165 format=3 uid="uid://b10jqmjjnf4r"]
+
+[ext_resource type="Shader" uid="uid://qi8ld8ftfjaa" path="res://ui/lettershader.gdshader" id="1_21d1m"]
+[ext_resource type="Script" uid="uid://calfcby57tdcl" path="res://assets/ui/Letters/letter_escape_success.gd" id="2_bwkgi"]
+[ext_resource type="Texture2D" uid="uid://bxcwq83b2pcfx" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000020.png" id="3_r8nd0"]
+[ext_resource type="Texture2D" uid="uid://uyrx4pgxcg42" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000021.png" id="4_0biuj"]
+[ext_resource type="Texture2D" uid="uid://d0ate304e04df" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000022.png" id="5_yx0jv"]
+[ext_resource type="Texture2D" uid="uid://24banl8j5evm" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000023.png" id="6_w7k86"]
+[ext_resource type="Texture2D" uid="uid://cvah4rt372eoa" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000024.png" id="7_rdokp"]
+[ext_resource type="Texture2D" uid="uid://cglifph32q8dd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000025.png" id="8_h5go7"]
+[ext_resource type="Texture2D" uid="uid://8x2gxj7l26fd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000026.png" id="9_1eat5"]
+[ext_resource type="Texture2D" uid="uid://bsdqp5a7dicat" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000027.png" id="10_qhynh"]
+[ext_resource type="Texture2D" uid="uid://c8l6bsayyii03" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000028.png" id="11_wfg28"]
+[ext_resource type="Texture2D" uid="uid://cmrj2vs3gijsf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000029.png" id="12_821di"]
+[ext_resource type="Texture2D" uid="uid://br3081xcl7xrl" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000030.png" id="13_5hdli"]
+[ext_resource type="Texture2D" uid="uid://d0f1pese1jpay" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000031.png" id="14_4hou2"]
+[ext_resource type="Texture2D" uid="uid://duwbcgollfubb" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000032.png" id="15_svblp"]
+[ext_resource type="Texture2D" uid="uid://mb63km2civuy" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000033.png" id="16_fvn17"]
+[ext_resource type="Texture2D" uid="uid://ckmidvhf1s85l" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000034.png" id="17_vppxt"]
+[ext_resource type="Texture2D" uid="uid://b30sbcbeslahx" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000035.png" id="18_i7vdf"]
+[ext_resource type="Texture2D" uid="uid://b8huen3m6jrmj" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000036.png" id="19_3kmo6"]
+[ext_resource type="Texture2D" uid="uid://cpv2b7w1yy50c" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000037.png" id="20_xp5ke"]
+[ext_resource type="Texture2D" uid="uid://bxi6ytxmyqrm7" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000038.png" id="21_5351r"]
+[ext_resource type="Texture2D" uid="uid://d2l5maaflehb" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000039.png" id="22_uibqn"]
+[ext_resource type="Texture2D" uid="uid://5jtqsc0l27a" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000040.png" id="23_e5s14"]
+[ext_resource type="Texture2D" uid="uid://cgdxsmgmybmfr" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000041.png" id="24_lgc5v"]
+[ext_resource type="Texture2D" uid="uid://dhfxtdk27b3gy" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000042.png" id="25_qb23k"]
+[ext_resource type="Texture2D" uid="uid://ct38e2nhps1j1" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000043.png" id="26_tcqi4"]
+[ext_resource type="Texture2D" uid="uid://3uxoe8dpmvmh" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000044.png" id="27_esmcs"]
+[ext_resource type="Texture2D" uid="uid://vae2yn4gv2bl" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000045.png" id="28_dludb"]
+[ext_resource type="Texture2D" uid="uid://dagspll7asnqf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000046.png" id="29_tsn73"]
+[ext_resource type="Texture2D" uid="uid://nkfa4htf5h40" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000047.png" id="30_kv0p5"]
+[ext_resource type="Texture2D" uid="uid://bnh51etmfcm3p" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000048.png" id="31_fyfqv"]
+[ext_resource type="Texture2D" uid="uid://dgyesfiw7nl4r" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000049.png" id="32_ds8uq"]
+[ext_resource type="Texture2D" uid="uid://dbh8nn0ep466p" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000050.png" id="33_80tjd"]
+[ext_resource type="Texture2D" uid="uid://coglop6ebfp3j" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000051.png" id="34_2g8b1"]
+[ext_resource type="Texture2D" uid="uid://cj6slqekym8f2" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000052.png" id="35_pfoqo"]
+[ext_resource type="Texture2D" uid="uid://xkhgch6j7f8c" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000053.png" id="36_1fqwa"]
+[ext_resource type="Texture2D" uid="uid://bh8d8k6pt8tad" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000054.png" id="37_uyeb6"]
+[ext_resource type="Texture2D" uid="uid://crmksewap84kt" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000055.png" id="38_w82xt"]
+[ext_resource type="Texture2D" uid="uid://lgkin4tpuhtf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000056.png" id="39_tt4ug"]
+[ext_resource type="Texture2D" uid="uid://do5c5uepuujbb" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000057.png" id="40_6lx07"]
+[ext_resource type="Texture2D" uid="uid://dc5jv02sfu875" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000058.png" id="41_f36td"]
+[ext_resource type="Texture2D" uid="uid://caub6uypevdpx" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000059.png" id="42_7idj6"]
+[ext_resource type="Texture2D" uid="uid://ceqgcdvixrgek" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000060.png" id="43_2wwoi"]
+[ext_resource type="Texture2D" uid="uid://cv16ggbamnfov" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000061.png" id="44_omnvc"]
+[ext_resource type="Texture2D" uid="uid://bfun3r4oidqka" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000062.png" id="45_ketxt"]
+[ext_resource type="Texture2D" uid="uid://m8etierp1b7f" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000063.png" id="46_phthu"]
+[ext_resource type="Texture2D" uid="uid://bqbm1pbswq4bg" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000064.png" id="47_l8cau"]
+[ext_resource type="Texture2D" uid="uid://bckquhlc6euyw" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000065.png" id="48_i76u4"]
+[ext_resource type="Texture2D" uid="uid://c8qhb58reps3" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000066.png" id="49_a44ot"]
+[ext_resource type="Texture2D" uid="uid://bspff1nq14687" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000067.png" id="50_d7oxj"]
+[ext_resource type="Texture2D" uid="uid://4rug21ysboow" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000068.png" id="51_tnvrv"]
+[ext_resource type="Texture2D" uid="uid://lupa5pb51338" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000069.png" id="52_wggym"]
+[ext_resource type="Texture2D" uid="uid://bg1v8qxf7i0gs" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000070.png" id="53_fqv5o"]
+[ext_resource type="Texture2D" uid="uid://ccxer4noelqgi" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000071.png" id="54_d8312"]
+[ext_resource type="Texture2D" uid="uid://dq3rt6778m0h0" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000072.png" id="55_67sm1"]
+[ext_resource type="Texture2D" uid="uid://cdryetagmycdn" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000073.png" id="56_mndki"]
+[ext_resource type="Texture2D" uid="uid://b6lk275idvx6t" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000074.png" id="57_t8xtl"]
+[ext_resource type="Texture2D" uid="uid://xmaytf7wd0pd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000075.png" id="58_r48ro"]
+[ext_resource type="Texture2D" uid="uid://fo1str87kwjd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000076.png" id="59_ojel1"]
+[ext_resource type="Texture2D" uid="uid://bkcndth7hjyi0" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000077.png" id="60_xa5s6"]
+[ext_resource type="Texture2D" uid="uid://b7q17fyj1og2y" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000078.png" id="61_xnwrj"]
+[ext_resource type="Texture2D" uid="uid://b13vmy4tue3uj" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000079.png" id="62_xoi66"]
+[ext_resource type="Texture2D" uid="uid://dl1g4f2dn6ywf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000080.png" id="63_6pmak"]
+[ext_resource type="Texture2D" uid="uid://dmnvpvhege5a7" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000081.png" id="64_hox4u"]
+[ext_resource type="Texture2D" uid="uid://c6futvc6o1h2d" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000082.png" id="65_ptsgy"]
+[ext_resource type="Texture2D" uid="uid://c11rqnjl33lw5" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000083.png" id="66_hbk7q"]
+[ext_resource type="Texture2D" uid="uid://bc3oonc6b46il" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000084.png" id="67_vbyc7"]
+[ext_resource type="Texture2D" uid="uid://eu3figkehbvs" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000085.png" id="68_2i22w"]
+[ext_resource type="Texture2D" uid="uid://c05oq8527i853" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000086.png" id="69_o7jdd"]
+[ext_resource type="Texture2D" uid="uid://ddmrvph2b80e8" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000087.png" id="70_6nv1x"]
+[ext_resource type="Texture2D" uid="uid://cs3qeb4vg3d52" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000088.png" id="71_rvwjr"]
+[ext_resource type="Texture2D" uid="uid://bstuud758evw8" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000089.png" id="72_ooajs"]
+[ext_resource type="Texture2D" uid="uid://c8qtqdqove4vk" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000090.png" id="73_t3ga5"]
+[ext_resource type="Texture2D" uid="uid://beyrpci3x1mnd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000091.png" id="74_waxph"]
+[ext_resource type="Texture2D" uid="uid://b8ibfkvlx5w2x" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000092.png" id="75_ijiwt"]
+[ext_resource type="Texture2D" uid="uid://dckbx5m0xuniv" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000093.png" id="76_3q5qo"]
+[ext_resource type="Texture2D" uid="uid://dlftl6tc7o8lp" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000094.png" id="77_tujja"]
+[ext_resource type="Texture2D" uid="uid://cg8ek8juat8pf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000095.png" id="78_oshj8"]
+[ext_resource type="Texture2D" uid="uid://cng1ktskkp0ht" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000096.png" id="79_euf8l"]
+[ext_resource type="Texture2D" uid="uid://bqyctk4e7fwoy" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000097.png" id="80_8b3yu"]
+[ext_resource type="Texture2D" uid="uid://bcueawkytvhps" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000098.png" id="81_t713s"]
+[ext_resource type="Texture2D" uid="uid://dli0xnndarcfg" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000099.png" id="82_uhww6"]
+[ext_resource type="Texture2D" uid="uid://cflqnysmmv6w8" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000100.png" id="83_vu1at"]
+[ext_resource type="Texture2D" uid="uid://03be78dloruo" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000101.png" id="84_284y4"]
+[ext_resource type="Texture2D" uid="uid://bidiu3ubcixf8" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000102.png" id="85_w4h54"]
+[ext_resource type="Texture2D" uid="uid://bqggl57bnwonn" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000103.png" id="86_wa8x7"]
+[ext_resource type="Texture2D" uid="uid://dkkhmixlxttpe" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000104.png" id="87_tfyr3"]
+[ext_resource type="Texture2D" uid="uid://bng6s0ebt60yc" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000105.png" id="88_fkpg3"]
+[ext_resource type="Texture2D" uid="uid://cx06mor4gc8oo" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000106.png" id="89_tr6nr"]
+[ext_resource type="Texture2D" uid="uid://b654nkf5lcsgo" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000107.png" id="90_mic5a"]
+[ext_resource type="Texture2D" uid="uid://c8kithhjd5bt" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000108.png" id="91_8q1m7"]
+[ext_resource type="Texture2D" uid="uid://b5v7u8cctkn31" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000109.png" id="92_k8pre"]
+[ext_resource type="Texture2D" uid="uid://cbpjixrgml03x" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000110.png" id="93_tl0oy"]
+[ext_resource type="Texture2D" uid="uid://durka0yva6qra" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000111.png" id="94_spgir"]
+[ext_resource type="Texture2D" uid="uid://bye5u0c4vevrf" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000112.png" id="95_pscxv"]
+[ext_resource type="Texture2D" uid="uid://lwl35ifldh0b" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000113.png" id="96_alyhe"]
+[ext_resource type="Texture2D" uid="uid://bf1q3jgavaqh5" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000114.png" id="97_1bgnh"]
+[ext_resource type="Texture2D" uid="uid://b2hg8qyfci855" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000115.png" id="98_rp03l"]
+[ext_resource type="Texture2D" uid="uid://bfahpwttjs7iq" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000116.png" id="99_mw4a8"]
+[ext_resource type="Texture2D" uid="uid://qdpshyode6xi" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000117.png" id="100_nht7x"]
+[ext_resource type="Texture2D" uid="uid://blm2mkif4dyi4" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000118.png" id="101_k6t1x"]
+[ext_resource type="Texture2D" uid="uid://j2upa0uidgvo" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000119.png" id="102_t76sx"]
+[ext_resource type="Texture2D" uid="uid://djlbdrux82sou" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000120.png" id="103_gw02h"]
+[ext_resource type="Texture2D" uid="uid://6ubv0fmujbsw" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000121.png" id="104_5w0n2"]
+[ext_resource type="Texture2D" uid="uid://d0bgi5v6bb78y" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000122.png" id="105_7c5u4"]
+[ext_resource type="Texture2D" uid="uid://b1a1t5kvgusgw" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000123.png" id="106_3krtp"]
+[ext_resource type="Texture2D" uid="uid://dmtbiip6x18hg" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000124.png" id="107_36dgj"]
+[ext_resource type="Texture2D" uid="uid://0s4nckajjc66" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000125.png" id="108_1rq2m"]
+[ext_resource type="Texture2D" uid="uid://bafp3087xkagy" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000126.png" id="109_s17ci"]
+[ext_resource type="Texture2D" uid="uid://dclmmaflq13ju" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000127.png" id="110_jncci"]
+[ext_resource type="Texture2D" uid="uid://cmxu2pkg8amvy" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000128.png" id="111_5jsk8"]
+[ext_resource type="Texture2D" uid="uid://c1m3bddsywedo" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000129.png" id="112_44qn3"]
+[ext_resource type="Texture2D" uid="uid://bdkjkdxnuy806" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000130.png" id="113_8ly0e"]
+[ext_resource type="Texture2D" uid="uid://bfw6sdv6nvdpm" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000131.png" id="114_1idg7"]
+[ext_resource type="Texture2D" uid="uid://dbcspmjowfmfc" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000132.png" id="115_w0n1n"]
+[ext_resource type="Texture2D" uid="uid://btke6kbekapbl" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000133.png" id="116_olnya"]
+[ext_resource type="Texture2D" uid="uid://buwow8iw683ou" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000134.png" id="117_sjwf4"]
+[ext_resource type="Texture2D" uid="uid://dded4pumxj0bg" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000135.png" id="118_hexcr"]
+[ext_resource type="Texture2D" uid="uid://c5jw73nqqkf20" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000136.png" id="119_7agw7"]
+[ext_resource type="Texture2D" uid="uid://0bcn3di6smbx" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000137.png" id="120_c3v7g"]
+[ext_resource type="Texture2D" uid="uid://7vujind4htvd" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000138.png" id="121_bd72l"]
+[ext_resource type="Texture2D" uid="uid://dbe2xs3vpgsr0" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000139.png" id="122_na2tm"]
+[ext_resource type="Texture2D" uid="uid://caw8bi0g2d65" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000140.png" id="123_swcnc"]
+[ext_resource type="Texture2D" uid="uid://cua81thhy802f" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000141.png" id="124_y1ye1"]
+[ext_resource type="Texture2D" uid="uid://b0psvcx78gv4x" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000142.png" id="125_y6yqs"]
+[ext_resource type="Texture2D" uid="uid://dxrkvn8n1buct" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000143.png" id="126_tns2k"]
+[ext_resource type="Texture2D" uid="uid://bo8ix6b44b7nv" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000144.png" id="127_dm56h"]
+[ext_resource type="Texture2D" uid="uid://dvbt3wexyvoe5" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000145.png" id="128_j77c0"]
+[ext_resource type="Texture2D" uid="uid://d8h84rlwomf7" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000146.png" id="129_tvpom"]
+[ext_resource type="Texture2D" uid="uid://cfu452un7s26x" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000147.png" id="130_5ke10"]
+[ext_resource type="Texture2D" uid="uid://be4bj3213qsrk" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000148.png" id="131_bhlqy"]
+[ext_resource type="Texture2D" uid="uid://bu42jha0uq0bk" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000149.png" id="132_1qr7c"]
+[ext_resource type="Texture2D" uid="uid://w8ump2yfx1ey" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000150.png" id="133_bk18b"]
+[ext_resource type="Texture2D" uid="uid://euijrfm2sx1t" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000151.png" id="134_rmg01"]
+[ext_resource type="Texture2D" uid="uid://0hq7eib0o8ik" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000152.png" id="135_6yaew"]
+[ext_resource type="Texture2D" uid="uid://cbkgkmy4wredq" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000153.png" id="136_blf4v"]
+[ext_resource type="Texture2D" uid="uid://dhb1repgf08x3" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000154.png" id="137_m8lfy"]
+[ext_resource type="Texture2D" uid="uid://dntiwkdp18o68" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000155.png" id="138_ke0ae"]
+[ext_resource type="Texture2D" uid="uid://wjc7tytn06mr" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000156.png" id="139_6ot3d"]
+[ext_resource type="Texture2D" uid="uid://cjq5r1vsdg5st" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000157.png" id="140_rbyka"]
+[ext_resource type="Texture2D" uid="uid://bjydet62sjtum" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000158.png" id="141_ohini"]
+[ext_resource type="Texture2D" uid="uid://d2trhev206e3u" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000159.png" id="142_tdy4j"]
+[ext_resource type="Texture2D" uid="uid://2v63830jdhm4" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000160.png" id="143_qs5jd"]
+[ext_resource type="Texture2D" uid="uid://dxitswlupje0d" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000161.png" id="144_wej3w"]
+[ext_resource type="Texture2D" uid="uid://cl2c6tlu0xpr0" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000162.png" id="145_6a8mw"]
+[ext_resource type="Texture2D" uid="uid://b2f3ycjvd6pfw" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000163.png" id="146_jpf78"]
+[ext_resource type="Texture2D" uid="uid://cu8wo74xil4no" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000164.png" id="147_jaaq3"]
+[ext_resource type="Texture2D" uid="uid://ybh2sk8w07jq" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000165.png" id="148_56447"]
+[ext_resource type="Texture2D" uid="uid://d0rmaiya2ujq8" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000166.png" id="149_7oot6"]
+[ext_resource type="Texture2D" uid="uid://dua8xr3xubmmn" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000167.png" id="150_hmof5"]
+[ext_resource type="Texture2D" uid="uid://cagmp437dyerh" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000168.png" id="151_jkbxh"]
+[ext_resource type="Texture2D" uid="uid://c31oho60ito6e" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000169.png" id="152_mnq63"]
+[ext_resource type="Texture2D" uid="uid://cmfoyf603vyhv" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000170.png" id="153_j6ttv"]
+[ext_resource type="Texture2D" uid="uid://cjd0pn84uiey3" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000171.png" id="154_gotxb"]
+[ext_resource type="Texture2D" uid="uid://bycaghyvegk06" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000172.png" id="155_8q605"]
+[ext_resource type="Texture2D" uid="uid://bdxahmuh4tywe" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000173.png" id="156_la2m1"]
+[ext_resource type="Texture2D" uid="uid://b3twfo2lkbb52" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000174.png" id="157_unw2p"]
+[ext_resource type="Texture2D" uid="uid://ktfrt1y14lv5" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000794.png" id="777_5i6rn"]
+[ext_resource type="Texture2D" uid="uid://bdcjofua4edqt" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000795.png" id="778_1pqk6"]
+[ext_resource type="Texture2D" uid="uid://kvoqdhl1dumn" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000796.png" id="779_eqft5"]
+[ext_resource type="Texture2D" uid="uid://bl7tx0jsoksqs" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000797.png" id="780_h84ci"]
+[ext_resource type="Texture2D" uid="uid://qs8m5h3gftbn" path="res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim00000798.png" id="781_g1e0w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ug8j6"]
+shader = ExtResource("1_21d1m")
+shader_parameter/inner_outline_width = 1.0
+shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
+shader_parameter/outer_outline_width = 3.0
+shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
+shader_parameter/texture_region = Vector4(0, 0, 0, 0)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m1vas"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_r8nd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0biuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yx0jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w7k86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rdokp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h5go7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1eat5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qhynh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wfg28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_821di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5hdli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4hou2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_svblp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fvn17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vppxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i7vdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3kmo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xp5ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5351r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uibqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_e5s14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_lgc5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qb23k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_tcqi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_esmcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dludb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tsn73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_kv0p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_fyfqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ds8uq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_80tjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2g8b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pfoqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_1fqwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_uyeb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_w82xt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_tt4ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_6lx07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_f36td")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7idj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_2wwoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_omnvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ketxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_phthu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_l8cau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_i76u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_a44ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_d7oxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_tnvrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_wggym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_fqv5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_d8312")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_67sm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_mndki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_t8xtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_r48ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_ojel1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_xa5s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xnwrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_xoi66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_6pmak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_hox4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ptsgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_hbk7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_vbyc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_2i22w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_o7jdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_6nv1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_rvwjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ooajs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_t3ga5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_waxph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ijiwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_3q5qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_tujja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_oshj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_euf8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_8b3yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_t713s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_uhww6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_vu1at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_284y4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_w4h54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_wa8x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tfyr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_fkpg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_tr6nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_mic5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_8q1m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_k8pre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_tl0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_spgir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_pscxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_alyhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_1bgnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_rp03l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_mw4a8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_nht7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_k6t1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_t76sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_gw02h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_5w0n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_7c5u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_3krtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_36dgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_1rq2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_s17ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_jncci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_5jsk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_44qn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_8ly0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_1idg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_w0n1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_olnya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_sjwf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_hexcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_7agw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_c3v7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_bd72l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_na2tm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_swcnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_y1ye1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_y6yqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_tns2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_dm56h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_j77c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_tvpom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_5ke10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_bhlqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_1qr7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_bk18b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_rmg01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_6yaew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_blf4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_m8lfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_ke0ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_6ot3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_rbyka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_ohini")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_tdy4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_qs5jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_wej3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_6a8mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_jpf78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_jaaq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_56447")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_7oot6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_hmof5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_jkbxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_mnq63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_j6ttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_gotxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_8q605")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_la2m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_unw2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("777_5i6rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("778_1pqk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("779_eqft5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("780_h84ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("781_g1e0w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="letter_rat_race_escape" type="Node2D"]
+material = SubResource("ShaderMaterial_ug8j6")
+position = Vector2(-154.688, -2.19742)
+script = ExtResource("2_bwkgi")
+metadata/movie_file = &"res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim.png"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m1vas")
+autoplay = "default"
+frame = 33
+frame_progress = 0.896285

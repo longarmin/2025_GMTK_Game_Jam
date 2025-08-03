@@ -29,8 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://7hdpmnwe0m7k" path="res://assets/rat/run/002.png" id="24_nohsj"]
 [ext_resource type="Texture2D" uid="uid://c030uv7w2bgs3" path="res://assets/rat/run/003.png" id="25_7mcg4"]
 [ext_resource type="Texture2D" uid="uid://dw8wfsxexlcit" path="res://assets/rat/run/004.png" id="26_10sdn"]
-[ext_resource type="PackedScene" uid="uid://bi1nmdd4n2yw2" path="res://assets/ui/Letters/RatRaceLetters/letter_rat_race.tscn" id="27_dbfs1"]
 [ext_resource type="Texture2D" uid="uid://6jcawd000qhr" path="res://assets/PIXELART_gmtk-game-jam-2025-logo-black.png" id="28_mxs5a"]
+[ext_resource type="PackedScene" uid="uid://b10jqmjjnf4r" path="res://assets/ui/Letters/RatRaceLetters/rendered_letter_rat_race.tscn" id="30_l4cq4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s1050"]
 resource_name = "Ground"
@@ -1637,8 +1637,8 @@ animation = &"Run"
 autoplay = "Run"
 frame_progress = 0.558177
 
-[node name="letter_escape_success" parent="." instance=ExtResource("27_dbfs1")]
-position = Vector2(131, 69)
+[node name="letter_rat_race_escape" parent="." instance=ExtResource("30_l4cq4")]
+position = Vector2(317, 76)
 
 [node name="Panel" type="Panel" parent="."]
 visible = false

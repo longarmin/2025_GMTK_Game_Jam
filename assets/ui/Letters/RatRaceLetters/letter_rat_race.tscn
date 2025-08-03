@@ -130,7 +130,7 @@ animations = [{
 material = SubResource("ShaderMaterial_ug8j6")
 position = Vector2(-154.688, -2.19742)
 script = ExtResource("2_0cix4")
-metadata/movie_file = &"res://assets/ui/Letters/Letter_Animation/success.png"
+metadata/movie_file = &"res://assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceanim.png"
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(154.688, 2.19742)
@@ -292,3 +292,7 @@ script = ExtResource("5_0ivyi")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m1vas")
 frame_progress = 0.762901
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(154.688, 0.19742)
+metadata/movie_file = ""

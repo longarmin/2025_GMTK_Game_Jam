@@ -28,7 +28,7 @@ window/stretch/scale_mode="integer"
 
 [editor]
 
-movie_writer/movie_file="C:/Users/armin/Documents/gitrepos/2025_GMTK_Game_Jam/assets/ui/Letters/Letter_Animation/success.png"
+movie_writer/movie_file="C:/Users/armin/Documents/gitrepos/2025_GMTK_Game_Jam/assets/ui/Letters/RatRaceLetters/RatRaceLetterAnimation/ratraceletteranim.png"
 movie_writer/fps=25
 
 [input]
