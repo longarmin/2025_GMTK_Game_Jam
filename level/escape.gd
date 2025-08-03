@@ -11,6 +11,7 @@ func _ready() -> void:
 		get_parent().start_label.hide()
 		get_parent().end_label.show()
 		get_parent().panel.show()
+		get_parent().show_points()
 	)
 	body_entered.connect(func(body: Node2D) -> void:
 		if body is Player:

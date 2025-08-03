@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbhqknurm5g6s"]
+
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="1_jeqa3"]
+[ext_resource type="Script" uid="uid://dwojgm7n3t6y1" path="res://ui/score_container.gd" id="1_n0jf4"]
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 246.0
+offset_bottom = 133.0
+size_flags_vertical = 3
+script = ExtResource("1_n0jf4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreEnergyLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme = ExtResource("1_jeqa3")
+text = "POINTS_ENERGY"
+
+[node name="ScoreCompleteLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme = ExtResource("1_jeqa3")
+text = "POINTS_LEVEL_COMPLETE"
+
+[node name="ScoreLifeLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme = ExtResource("1_jeqa3")
+text = "POINTS_LIFE"
+
+[node name="ScoreSumLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme = ExtResource("1_jeqa3")
+theme_override_colors/font_color = Color(0.85098, 0.341176, 0.388235, 1)
+text = "POINTS_SUM"

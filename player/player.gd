@@ -67,7 +67,6 @@ func _ready() -> void:
 	jump_input_buffer_timer.one_shot = true
 	add_child(jump_input_buffer_timer)
 	energy_timer.wait_time = 1.0
-	energy_timer.autostart = true
 	add_child(energy_timer)
 	set_energy(energy)
 	energy_timer.timeout.connect(func() -> void:

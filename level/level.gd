@@ -3,9 +3,11 @@ class_name Level extends Node2D
 @onready var player: Player = %Player
 @onready var animation: AnimationPlayer = %AnimationPlayer
 @onready var rotation_center: Node2D = %RotationCenter
-@onready var panel: PanelContainer = %PanelContainer
+@onready var panel: PanelContainer = %LevelStartPanel
 @onready var start_label: Label = %StartLabel
 @onready var end_label: Label = %EndLabel
+@onready var score: Control = %ScoreContainer
+@onready var hud: Hud = %Hud
 @onready var timer_start: Timer = Timer.new()
 @onready var audio_player: AudioStreamPlayer = AudioStreamPlayer.new()
 @onready var level_theme: AudioStream = preload("res://assets/music/level_theme.wav")
@@ -17,6 +19,7 @@ var has_timer_started := false
 func _ready() -> void:
 	GameManager.rot_spd = rotation_speed
 	end_label.hide()
+	hud.hide()
 	timer_start.autostart = false
 	timer_start.one_shot = true
 	timer_start.wait_time = 3.0
@@ -36,6 +39,8 @@ func _ready() -> void:
 		panel.hide()
 		disable_all_physics(true)
 		has_timer_started = false
+		player.energy_timer.start()
+		hud.show()
 	)
 
 func _physics_process(delta):
@@ -69,3 +74,8 @@ func set_node_physics_recursive(node: Node, enable: bool) -> void:
 	# Recursively process children
 	for child in node.get_children():
 		set_node_physics_recursive(child, enable)
+
+
+func show_points() -> void:
+	score.show()
+	score.show_score_on_level_end(hud.energy_bar)
