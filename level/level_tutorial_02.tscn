@@ -1,12 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://dqm7fa5w5y5p5"]
+[gd_scene load_steps=12 format=3 uid="uid://dqm7fa5w5y5p5"]
 
-[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_grdvh"]
-[ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="2_qumh2"]
-[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_3y3w6"]
-[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_yupfi"]
-[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="5_hcwxy"]
-[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="6_exw8o"]
-[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="7_23wox"]
+[ext_resource type="Script" uid="uid://blq4wnlkqbo78" path="res://level/level.gd" id="1_1b764"]
+[ext_resource type="PackedScene" uid="uid://b22hgb0m0jesy" path="res://background/background.tscn" id="2_qy7rs"]
+[ext_resource type="PackedScene" uid="uid://clxvfwjrxgj2i" path="res://platform/circle.tscn" id="3_enbde"]
+[ext_resource type="PackedScene" uid="uid://3j87k68xo4ug" path="res://player/player.tscn" id="4_c0r50"]
+[ext_resource type="PackedScene" uid="uid://by5gho31me582" path="res://platform/platform.tscn" id="5_5m14w"]
+[ext_resource type="PackedScene" uid="uid://c5xfiilp1pmlg" path="res://level/escape.tscn" id="6_qg0cr"]
+[ext_resource type="Texture2D" uid="uid://ck04b1imroklm" path="res://assets/joint.png" id="6_qy7rs"]
+[ext_resource type="Theme" uid="uid://88uk406h7u3k" path="res://ui/main_theme.tres" id="7_lxf5s"]
 
 [sub_resource type="Animation" id="Animation_tdwm0"]
 length = 0.001
@@ -70,16 +71,16 @@ _data = {
 }
 
 [node name="LevelTutorial02" type="Node2D"]
-script = ExtResource("1_grdvh")
+script = ExtResource("1_1b764")
 rotation_speed = -0.2
 
-[node name="Background" parent="." instance=ExtResource("2_qumh2")]
+[node name="Background" parent="." instance=ExtResource("2_qy7rs")]
 position = Vector2(1, -67)
 
-[node name="Circle" parent="." instance=ExtResource("3_3y3w6")]
+[node name="Circle" parent="." instance=ExtResource("3_enbde")]
 platform_count = 8
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource("4_yupfi")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("4_c0r50")]
 unique_name_in_owner = true
 position = Vector2(33, 186)
 
@@ -90,89 +91,108 @@ position = Vector2(33, 186)
 [node name="RotationCenter" type="Node2D" parent="Platforms"]
 unique_name_in_owner = true
 
-[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
-position = Vector2(-75, 142)
+[node name="Platform" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+position = Vector2(-77, 144)
 rotation = 0.823981
-color = 1
 
-[node name="Platform2" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform2" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-108, 84)
 rotation = 0.823981
 width = 96.0
-color = 1
 
-[node name="Platform3" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform3" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-138, 7)
 rotation = 1.5729
 width = 96.0
-color = 1
 
-[node name="Platform4" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
-position = Vector2(-122, -26)
-rotation = 1.5729
+[node name="Platform4" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+position = Vector2(-120, -26)
+rotation = 1.56905
 width = 96.0
-color = 1
 
-[node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform6" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-37, -91)
 rotation = 2.58883
 width = 64.0
-color = 1
 
-[node name="Platform7" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform7" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(9, -97)
 rotation = 3.45254
 width = 48.0
-color = 1
 
-[node name="Platform8" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
-position = Vector2(44, -74)
+[node name="Platform8" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
+position = Vector2(51, -70)
 rotation = 3.56025
 width = 48.0
-color = 1
 
-[node name="Platform9" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform9" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(68, -28)
 rotation = 4.69758
 width = 64.0
-color = 1
 
-[node name="Platform10" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform10" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(50, 31)
 rotation = 4.99093
 width = 64.0
-color = 1
 
-[node name="Platform11" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform11" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(7, 51)
 rotation = 5.67006
 width = 64.0
-color = 1
 
-[node name="Platform12" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform12" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-74, 14)
 rotation = 4.7048
 width = 96.0
-color = 1
 
-[node name="Platform14" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform14" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-10, -55)
 width = 32.0
-color = 1
 
-[node name="Platform13" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform13" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-42, 49)
 rotation = 4.08919
 width = 32.0
-color = 1
 
-[node name="Platform5" parent="Platforms/RotationCenter" instance=ExtResource("5_hcwxy")]
+[node name="Platform5" parent="Platforms/RotationCenter" instance=ExtResource("5_5m14w")]
 position = Vector2(-93, -83)
 rotation = 2.56616
 width = 64.0
-color = 1
 
-[node name="Escape" parent="." instance=ExtResource("6_exw8o")]
+[node name="Joints" type="Node2D" parent="Platforms/RotationCenter"]
+unique_name_in_owner = true
+
+[node name="Joint2" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+position = Vector2(-139, 51)
+rotation = -0.175618
+scale = Vector2(1, 1)
+texture = ExtResource("6_qy7rs")
+
+[node name="Joint3" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+position = Vector2(-24, 200)
+rotation = 0.0106164
+scale = Vector2(1, 1)
+texture = ExtResource("6_qy7rs")
+
+[node name="Joint4" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+position = Vector2(-120, -70)
+rotation = 0.314933
+scale = Vector2(1, 1)
+texture = ExtResource("6_qy7rs")
+
+[node name="Joint5" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+position = Vector2(-11, -105)
+rotation = 0.0059658
+scale = Vector2(1, 1)
+texture = ExtResource("6_qy7rs")
+
+[node name="Joint6" type="Sprite2D" parent="Platforms/RotationCenter/Joints"]
+position = Vector2(67, -64)
+rotation = -0.0630117
+scale = Vector2(1, 1)
+texture = ExtResource("6_qy7rs")
+
+[node name="Escape" parent="." instance=ExtResource("6_qg0cr")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -196,7 +216,7 @@ size_flags_vertical = 3
 [node name="StartLabel" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/CenterContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("7_23wox")
+theme = ExtResource("7_lxf5s")
 text = "Level: First Jumps"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
@@ -210,7 +230,7 @@ alignment = 2
 [node name="EndLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme = ExtResource("7_23wox")
+theme = ExtResource("7_lxf5s")
 text = "bla"
 horizontal_alignment = 1
 

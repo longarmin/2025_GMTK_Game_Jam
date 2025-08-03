@@ -1557,7 +1557,6 @@ animations = [{
 }]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rqnt3"]
-bg_color = Color(0.270588, 0.156863, 0.235294, 0.392157)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -1613,6 +1612,7 @@ frame_progress = 0.558177
 position = Vector2(131, 69)
 
 [node name="Panel" type="Panel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

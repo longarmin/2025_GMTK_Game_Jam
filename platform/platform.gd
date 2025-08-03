@@ -4,13 +4,23 @@ class_name Platform extends AnimatableBody2D
 enum PlatformColor {
 	WHEEL_GROUND,
 	GROUND,
-	YELLOW
+	YELLOW,
+	SIMPLE,
+	SIMPLE_WITH_END
 }
+
+const PLATFORM_TEXTURES_SIMPLE = [
+	preload("res://assets/platform_with_end.png"),
+	preload("res://assets/platform_with_end_2.png"),
+	preload("res://assets/platform_with_end_3.png")
+]
 
 const PLATFORM_TEXTURES = {
 	PlatformColor.WHEEL_GROUND: preload("res://assets/wheel_ground_platform.png"),
 	PlatformColor.GROUND: preload("res://assets/ground_platform.png"),
-	PlatformColor.YELLOW: preload("res://assets/yellow_platform.png")
+	PlatformColor.YELLOW: preload("res://assets/yellow_platform.png"),
+	PlatformColor.SIMPLE: preload("res://assets/platform.png"),
+	PlatformColor.SIMPLE_WITH_END: preload("res://assets/platform_with_end.png")
 }
 
 ## The width of the platform in pixels. Snaps to 16 pixel increments.
@@ -21,7 +31,7 @@ const PLATFORM_TEXTURES = {
 ## the player jump up through it.
 @export var one_way_collision := false: set = set_one_way_collision
 ## This property lets you pick the color palette used by the platform.
-@export var color: PlatformColor = PlatformColor.WHEEL_GROUND: set = set_color
+@export var color: PlatformColor = PlatformColor.SIMPLE_WITH_END: set = set_color
 
 @onready var collision_shape_2d: CollisionShape2D = %CollisionShape2D
 @onready var shape: RectangleShape2D = collision_shape_2d.shape
@@ -65,4 +75,7 @@ func set_color(value: PlatformColor) -> void:
 	color = value
 	if sprite == null:
 		return
-	sprite.texture = PLATFORM_TEXTURES[color]
+	if color == PlatformColor.SIMPLE_WITH_END:
+		sprite.texture = PLATFORM_TEXTURES_SIMPLE.pick_random()
+	else:
+		sprite.texture = PLATFORM_TEXTURES[color]
