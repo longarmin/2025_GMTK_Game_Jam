@@ -22,7 +22,7 @@ func _ready() -> void:
 	timer_start.wait_time = 3.0
 	add_child(timer_start)
 	audio_player.stream = level_theme
-	audio_player.volume_db = -30.0
+	audio_player.volume_db = -25.0
 	add_child(audio_player)
 	audio_player.play()
 	disable_all_physics(false)
