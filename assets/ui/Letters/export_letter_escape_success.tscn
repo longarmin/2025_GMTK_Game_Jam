@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://yvwh5m5a40s6"]
+
+[ext_resource type="Shader" uid="uid://qi8ld8ftfjaa" path="res://ui/lettershader.gdshader" id="1_0yjbm"]
+[ext_resource type="Script" uid="uid://dlxajsubcmn64" path="res://assets/ui/Letters/export_letter_escape_success.gd" id="2_4dp4j"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ug8j6"]
+shader = ExtResource("1_0yjbm")
+shader_parameter/inner_outline_width = 1.0
+shader_parameter/inner_outline_color = Color(0.75, 0.75, 0.75, 1)
+shader_parameter/outer_outline_width = 3.0
+shader_parameter/outer_outline_color = Color(0.25, 0.125, 0.375, 1)
+shader_parameter/texture_region = Vector4(0, 0, 0, 0)
+
+[node name="export_letter_escape_success" type="Node2D"]
+material = SubResource("ShaderMaterial_ug8j6")
+position = Vector2(-154.688, -2.19742)
+script = ExtResource("2_4dp4j")

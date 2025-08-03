@@ -1597,7 +1597,7 @@ position = Vector2(106, 91)
 scale = Vector2(0.915, 0.915)
 sprite_frames = SubResource("SpriteFrames_sb7pk")
 autoplay = "default"
-frame_progress = 0.0953676
+frame_progress = 0.325172
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
 unique_name_in_owner = true
@@ -1605,7 +1605,7 @@ position = Vector2(4.37158, 45.9016)
 sprite_frames = SubResource("SpriteFrames_yaf6j")
 animation = &"Run"
 autoplay = "Run"
-frame_progress = 0.213601
+frame_progress = 0.558177
 
 [node name="Panel" type="Panel" parent="."]
 visible = false

@@ -1,6 +1,6 @@
 class_name Escape extends Area2D
 @onready var level_complete: bool = false
-var escape_successful_splasher = preload("res://assets/ui/Letters/letter_escape_success.tscn")
+var escape_successful_splasher = preload("res://assets/ui/Letters/rendered_letter_escape_success.tscn")
 @onready var timer_end: Timer = Timer.new()
 
 func _ready() -> void:
