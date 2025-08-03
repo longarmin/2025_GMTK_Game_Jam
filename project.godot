@@ -26,6 +26,11 @@ window/size/viewport_height=240
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
+[editor]
+
+movie_writer/movie_file="C:/Users/armin/Documents/gitrepos/2025_GMTK_Game_Jam/assets/ui/Letters/Letter_Animation/success.png"
+movie_writer/fps=25
+
 [input]
 
 move_left={
@@ -74,3 +79,4 @@ reload={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+viewport/transparent_background=true
